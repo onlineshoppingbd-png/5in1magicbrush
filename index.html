@@ -74,26 +74,16 @@
       mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
       -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
     }
-    .dark-section {
-      background:
-        radial-gradient(800px 400px at 100% 0%, rgba(251,191,36,0.15), transparent 60%),
-        linear-gradient(160deg, #0c4a6e 0%, #082f49 100%);
-    }
     .soft-section { background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%); }
     .dots-pattern {
       background-image: radial-gradient(rgba(3, 105, 161, 0.12) 1px, transparent 1px);
       background-size: 22px 22px;
     }
 
-    /* ============ Scroll Reveal ============ */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
-    .reveal.in-view { opacity: 1; transform: none; }
-    .d1 { transition-delay: .08s } .d2 { transition-delay: .16s } .d3 { transition-delay: .24s } .d4 { transition-delay: .32s }
-
     /* ============ Animations ============ */
-    @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
-    @keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(-2deg) } 50% { transform: translateY(-8px) rotate(-2deg) } }
-    @keyframes floatSlow2 { 0%,100% { transform: translateY(0) rotate(2deg) } 50% { transform: translateY(-8px) rotate(2deg) } }
+    @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+    @keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(-2deg) } 50% { transform: translateY(-7px) rotate(-2deg) } }
+    @keyframes floatSlow2 { 0%,100% { transform: translateY(0) rotate(2deg) } 50% { transform: translateY(-7px) rotate(2deg) } }
     .animate-float { animation: float 4.5s ease-in-out infinite; }
     .animate-float-slow { animation: floatSlow 5s ease-in-out infinite; }
     .animate-float-slow2 { animation: floatSlow2 6s ease-in-out infinite 0.6s; }
@@ -164,11 +154,11 @@
     .marquee:hover { animation-play-state: paused; }
     .no-scroll { overflow: hidden; }
 
+    /* Vertical 9:16 Video Frame */
     .phone-mockup {
-      border: 10px solid #1e293b;
-      border-radius: 40px;
-      box-shadow: 0 25px 60px -15px rgba(8,47,73,0.5);
-      position: relative;
+      border: 8px solid #0f172a;
+      border-radius: 36px;
+      box-shadow: 0 20px 50px -12px rgba(8,47,73,0.45);
       overflow: hidden;
       background: #000;
     }
@@ -181,10 +171,9 @@
   <!-- ============================================================
        1. STICKY HEADER
   ============================================================ -->
-  <header id="header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-100 transition-shadow">
+  <header id="header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-[68px]">
-        <!-- Brand Logo -->
+      <div class="flex items-center justify-between h-[66px]">
         <a href="#home" class="flex items-center gap-2.5">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 text-gold-400 flex items-center justify-center text-xl shadow-soft">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -195,21 +184,20 @@
           </span>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-1 rounded-full border border-brand-100 bg-white/80 p-1 font-medium text-[15px] text-brand-950 shadow-sm">
           <a href="#home" class="px-4 py-1.5 rounded-full hover:text-brand-600">হোম</a>
+          <a href="#video-demo" class="px-4 py-1.5 rounded-full hover:text-brand-600">ভিডিও</a>
+          <a href="#gallery-slider" class="px-4 py-1.5 rounded-full hover:text-brand-600">ফটো গ্যালারি</a>
           <a href="#pricing" class="px-4 py-1.5 rounded-full hover:text-brand-600 font-bold text-brand-700 bg-brand-50">প্যাকেজ ও দাম</a>
-          <a href="#details" class="px-4 py-1.5 rounded-full hover:text-brand-600">কীভাবে কাজ করে?</a>
-          <a href="#video" class="px-4 py-1.5 rounded-full hover:text-brand-600">ভিডিও</a>
+          <a href="#details" class="px-4 py-1.5 rounded-full hover:text-brand-600">বিস্তারিত তথ্য</a>
           <a href="#faq" class="px-4 py-1.5 rounded-full hover:text-brand-600">প্রশ্নোত্তর</a>
         </nav>
 
-        <!-- CTA Button -->
         <div class="flex items-center gap-3">
           <span class="hidden sm:flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
             <i class="fa-solid fa-hand-holding-dollar text-emerald-600"></i> ক্যাশ অন ডেলিভারি
           </span>
-          <button data-open-order class="btn inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold px-5 py-2.5 rounded-full shadow-soft hover:shadow-glow text-sm sm:text-base">
+          <button data-open-order class="btn inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold px-5 py-2 rounded-full shadow-soft hover:shadow-glow text-sm sm:text-base">
             <i class="fa-solid fa-cart-shopping"></i> অর্ডার করুন
           </button>
         </div>
@@ -226,26 +214,25 @@
       <div class="absolute -top-24 -right-24 w-80 h-80 bg-gold-400/20 rounded-full blur-3xl"></div>
       <div class="absolute -bottom-32 -left-20 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 md:pt-16 md:pb-20">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 md:pt-14 md:pb-16">
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           
-          <!-- Hero Copy -->
           <div class="text-center lg:text-left order-2 lg:order-1">
-            <div class="reveal inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-gold-300 mb-5">
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-gold-300 mb-4">
               <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-pulse"></span>
-              হাতে ঘষাঘষি ছাড়া কিচেন ও বাথরুম ঝকঝকে করার সমাধান!
+              হাতে ঘষাঘষি ছাড়াই কিচেন ও বাথরুম ঝকঝকে করুন!
             </div>
             
-            <h1 class="reveal d1 text-3xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.2] tracking-tight">
-              ঘরের কঠিন তেল চিটচিটে দাগ সাফ করুন<br class="hidden sm:block" />
+            <h1 class="text-3xl sm:text-5xl lg:text-[3.2rem] font-bold leading-[1.2] tracking-tight">
+              ঘরের কঠিন তেল-চিটচিটে দাগ সাফ করুন<br class="hidden sm:block" />
               <span class="shimmer-text">ক্লান্তিহীন নিমেষেই!</span> ✨
             </h1>
 
-            <p class="reveal d2 mt-4 text-base sm:text-lg text-brand-100/90 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              শক্তিশালী <span class="text-white font-semibold">5-in-1 Rechargeable Electric Cleaning Brush</span>। চুলা, টাইলস, বেসিন ও জানালার গ্রিল সেকেন্ডে নতুনের মতো উজ্জ্বল করুন। কোনো অগ্রিম টাকা লাগবে না—পণ্য হাতে পেয়ে টাকা পরিশোধ করুন।
+            <p class="mt-4 text-base sm:text-lg text-brand-100/90 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              শক্তিশালী <span class="text-white font-semibold">5-in-1 Rechargeable Electric Cleaning Brush</span>। চুলা, টাইলস, সিংক ও বাথরুমের দাগ নিমেষেই পরিষ্কার করুন। কোনো অগ্রিম টাকা নেই—পণ্য দেখে মূল্য পরিশোধ করুন।
             </p>
 
-            <div class="reveal d3 mt-5 flex items-center justify-center lg:justify-start gap-4 flex-wrap">
+            <div class="mt-5 flex items-center justify-center lg:justify-start gap-4 flex-wrap">
               <div class="bg-black/30 backdrop-blur px-4 py-2 rounded-2xl border border-white/10 flex items-baseline gap-2">
                 <span class="text-brand-200 text-xs sm:text-sm">শুরু মাত্র</span>
                 <span class="text-3xl font-extrabold text-gold-400">৳৭৫০</span>
@@ -257,46 +244,42 @@
               </div>
             </div>
 
-            <!-- Main CTA in Hero -->
-            <div class="reveal d4 mt-7 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
-              <button data-open-order class="btn cta-pulse w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-bold text-lg px-8 py-4 rounded-full">
-                <i class="fa-solid fa-bag-shopping"></i> এখনই ক্যাশ অন ডেলিভারিতে অর্ডার করুন
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <button data-open-order class="btn cta-pulse w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-bold text-base sm:text-lg px-8 py-3.5 rounded-full">
+                <i class="fa-solid fa-bag-shopping"></i> ক্যাশ অন ডেলিভারিতে অর্ডার করুন
               </button>
               <a href="#pricing" class="w-full sm:w-auto text-center font-bold text-sm text-brand-200 hover:text-white py-3 px-5 underline underline-offset-4">
                 সব প্যাকেজ ও দাম দেখুন ↓
               </a>
             </div>
 
-            <!-- Trust Badges -->
-            <div class="reveal mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs sm:text-sm font-medium text-brand-100">
+            <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs sm:text-sm font-medium text-brand-100">
               <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> সম্পূর্ণ ক্যাশ অন ডেলিভারি</span>
-              <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> দেখে চেক করে নেওয়ার সুযোগ</span>
-              <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> ফাস্ট ইউএসবি চার্জিং</span>
+              <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> চেক করে মূল্য পরিশোধ</span>
+              <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> ইউএসবি ফাস্ট চার্জিং</span>
             </div>
           </div>
 
-          <!-- Product Hero Image Showcase -->
-          <div class="reveal relative order-1 lg:order-2 max-w-md mx-auto w-full">
+          <div class="relative order-1 lg:order-2 max-w-md mx-auto w-full">
             <div class="absolute inset-4 bg-gradient-to-tr from-gold-400/30 via-brand-300/20 to-transparent blur-3xl rounded-full"></div>
             <div class="relative animate-float">
               <div class="relative rounded-[2rem] p-2 bg-white/10 border border-white/20 backdrop-blur shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Electric Cleaning Brush" class="w-full rounded-[1.6rem] object-cover aspect-[4/4.2]" />
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Electric Cleaning Brush" class="w-full rounded-[1.6rem] object-cover aspect-square" />
               </div>
               
-              <!-- Floating Highlights -->
-              <div class="animate-float-slow absolute -left-3 top-8 bg-white text-brand-950 rounded-2xl px-3.5 py-2 shadow-soft flex items-center gap-2.5">
-                <span class="w-8 h-8 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-base"><i class="fa-solid fa-bolt"></i></span>
+              <div class="animate-float-slow absolute -left-3 top-6 bg-white text-brand-950 rounded-2xl px-3 py-1.5 shadow-soft flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-sm"><i class="fa-solid fa-bolt"></i></span>
                 <div class="leading-tight">
-                  <div class="text-[11px] text-slate-500">হাই-পাওয়ার</div>
-                  <div class="font-bold text-xs">২৮০+ RPM ঘূর্ণন গতি</div>
+                  <div class="text-[10px] text-slate-500">স্পিড</div>
+                  <div class="font-bold text-xs">২৮০+ RPM মোটর</div>
                 </div>
               </div>
 
-              <div class="animate-float-slow2 absolute -right-3 bottom-10 bg-white text-brand-950 rounded-2xl px-3.5 py-2 shadow-soft flex items-center gap-2.5">
-                <span class="w-8 h-8 rounded-xl bg-gold-200 text-gold-700 flex items-center justify-center text-base"><i class="fa-solid fa-layer-group"></i></span>
+              <div class="animate-float-slow2 absolute -right-3 bottom-6 bg-white text-brand-950 rounded-2xl px-3 py-1.5 shadow-soft flex items-center gap-2">
+                <span class="w-8 h-8 rounded-xl bg-gold-200 text-gold-700 flex items-center justify-center text-sm"><i class="fa-solid fa-layer-group"></i></span>
                 <div class="leading-tight">
-                  <div class="text-[11px] text-slate-500">কমপ্লিট সেট</div>
-                  <div class="font-bold text-xs">৫টি মাল্টি-হেড কিট ফ্রি</div>
+                  <div class="text-[10px] text-slate-500">সেট</div>
+                  <div class="font-bold text-xs">৫টি ব্রাশ হেড ফ্রি</div>
                 </div>
               </div>
             </div>
@@ -305,7 +288,6 @@
         </div>
       </div>
 
-      <!-- Trust Marquee Ticker -->
       <div class="relative border-t border-white/10 bg-black/20 backdrop-blur-sm py-3 overflow-hidden">
         <div class="marquee flex w-max gap-10 text-xs sm:text-sm font-medium text-brand-100 whitespace-nowrap">
           <span class="flex gap-10">
@@ -325,43 +307,148 @@
     </section>
 
     <!-- ============================================================
-         3. PRICING & PACKAGES (HIGHER UP FOR MAXIMUM CONVERSION)
+         3. REAL DEMO VIDEO (PLACED RIGHT AFTER HERO)
     ============================================================ -->
-    <section id="pricing" class="py-14 md:py-20 bg-white relative">
+    <section id="video-demo" class="py-12 md:py-16 bg-slate-900 text-white relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-gold-400 bg-white/10 px-3.5 py-1.5 rounded-full mb-3">
+          <i class="fa-solid fa-circle-play"></i> রিয়েল ডেমো ভিডিও
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-bold">ভিডিওতে দেখুন এটি বাস্তবে কীভাবে দাগ দূর করে</h2>
+        <p class="mt-2 text-xs sm:text-sm text-slate-300">মাত্র ৩০ সেকেন্ডে পুরো পরিষ্কারের প্রক্রিয়া দেখে নিন</p>
+
+        <div class="mt-8 flex justify-center">
+          <div class="phone-mockup w-full max-w-[310px] sm:max-w-[340px]">
+            <div class="w-20 h-3 bg-slate-800 mx-auto rounded-b-xl mb-1"></div>
+            <div class="relative w-full aspect-[9/16] bg-black">
+              <iframe 
+                class="w-full h-full object-cover"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&rel=0&modestbranding=1" 
+                title="Product Demo Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="w-24 h-1 bg-slate-700 mx-auto my-2 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="mt-7">
+          <button data-open-order class="btn cta-pulse inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-extrabold text-sm sm:text-base px-8 py-3.5 rounded-full shadow-soft">
+            <i class="fa-solid fa-cart-shopping"></i> পছন্দ হলে অর্ডার করুন (ক্যাশ অন ডেলিভারি)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. 1:1 SQUARE IMAGE SLIDER (PLACED RIGHT UNDER VIDEO)
+    ============================================================ -->
+    <section id="gallery-slider" class="py-12 md:py-16 bg-brand-50/50">
+      <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-brand-100 px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-images"></i> এইচডি ফটো গ্যালারি
+          </span>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-bold text-brand-950">প্রোডাক্টের প্রতিটি অংশ ঘুরে দেখুন</h2>
+          <p class="mt-1 text-xs text-slate-500">ছবি স্পর্শ করলে বা মাউস রাখলে স্লাইডারটি স্থির থাকবে</p>
+        </div>
+
+        <!-- 1:1 Square Slider Box -->
+        <div class="relative mt-7 overflow-hidden rounded-3xl border-2 border-brand-200 shadow-card bg-slate-900 group aspect-square" id="sliderWrapper">
+          <div class="flex transition-transform duration-700 ease-out h-full" id="sliderTrack">
+            <!-- Slide 1 (1:1) -->
+            <div class="w-full h-full flex-shrink-0 relative">
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&h=800&q=80" alt="Full Set Overview" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                <span class="text-[11px] bg-gold-500 text-brand-950 font-bold px-2 py-0.5 rounded">কমপ্লিট সেট</span>
+                <p class="font-bold text-sm mt-0.5">সব ধরনের ব্রাশ হেড সহ সম্পূর্ণ বক্স</p>
+              </div>
+            </div>
+            <!-- Slide 2 (1:1) -->
+            <div class="w-full h-full flex-shrink-0 relative">
+              <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&h=800&q=80" alt="Kitchen cleaning" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                <span class="text-[11px] bg-gold-500 text-brand-950 font-bold px-2 py-0.5 rounded">কিচেন স্পেশাল</span>
+                <p class="font-bold text-sm mt-0.5">তেল চিটচিটে গ্যাসের চুলা পরিষ্কার করা এখন সহজ</p>
+              </div>
+            </div>
+            <!-- Slide 3 (1:1) -->
+            <div class="w-full h-full flex-shrink-0 relative">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=800&q=80" alt="Bathroom tiles" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                <span class="text-[11px] bg-gold-500 text-brand-950 font-bold px-2 py-0.5 rounded">বাথরুম টাইলস</span>
+                <p class="font-bold text-sm mt-0.5">টাইলসের খাঁজের শ্যাওলা ও পানির দাগ নিমেষেই দূর</p>
+              </div>
+            </div>
+            <!-- Slide 4 (1:1) -->
+            <div class="w-full h-full flex-shrink-0 relative">
+              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=800&h=800&q=80" alt="Easy Wash" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                <span class="text-[11px] bg-gold-500 text-brand-950 font-bold px-2 py-0.5 rounded">ওয়াটারপ্রুফ</span>
+                <p class="font-bold text-sm mt-0.5">ব্যবহার শেষে সরাসরি পানিতে ধুয়ে ফেলুন</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <button id="sliderPrev" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/85 hover:bg-white text-brand-950 flex items-center justify-center text-sm shadow transition-all" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="sliderNext" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/85 hover:bg-white text-brand-950 flex items-center justify-center text-sm shadow transition-all" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Dots -->
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10" id="sliderDots">
+            <button class="w-2.5 h-2.5 rounded-full bg-gold-400 transition-all scale-125" data-slide="0"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="1"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="2"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. PRICING & PACKAGES (EASY ORDER SELECTION)
+    ============================================================ -->
+    <section id="pricing" class="py-14 md:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-2xl mx-auto">
-          <span class="reveal inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
-            <i class="fa-solid fa-tags"></i> ধামাকা অফার মূল্য তালিকা
+          <span class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-tags"></i> বিশেষ প্যাকেজ অফার
           </span>
-          <h2 class="reveal d1 mt-3 text-2xl sm:text-4xl font-bold text-brand-950 leading-tight">
-            আপনার পছন্দের প্যাকেজটি নির্বাচন করুন
+          <h2 class="mt-3 text-2xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            পছন্দের প্যাকেজটি সিলেক্ট করে অর্ডার করুন
           </h2>
-          <p class="reveal d2 mt-2 text-sm sm:text-base text-slate-600">
-            অগ্রিম ১ টাকাও দিতে হবে না। পার্সেল ডেলিভারি ম্যানের সামনে খুলে দেখে তারপর টাকা দিন।
+          <p class="mt-2 text-sm text-slate-600">
+            অগ্রিম কোনো টাকা দিতে হবে না। পার্সেল হাতে পেয়ে ডেলিভারি ম্যানের সামনে চেক করে টাকা দিন।
           </p>
         </div>
 
         <div class="mt-10 md:mt-14 grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           <!-- Package 1 -->
-          <div class="price-card reveal d1 bg-white border border-brand-100 rounded-3xl p-6 sm:p-7 shadow-card flex flex-col">
+          <div class="price-card bg-white border border-brand-100 rounded-3xl p-6 sm:p-7 shadow-card flex flex-col">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold text-brand-700 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">স্ট্যান্ডার্ড প্যাক</span>
               <span class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-lg"><i class="fa-solid fa-box"></i></span>
             </div>
             <h3 class="mt-4 text-xl font-bold text-brand-950">১ পিস ব্রাশ সেট</h3>
-            <p class="text-slate-500 text-xs">ছোট পরিবারের সাধারণ ব্যবহারের জন্য</p>
+            <p class="text-slate-500 text-xs">ছোট পরিবারের ব্যবহারের জন্য</p>
             <div class="mt-4 flex items-end gap-2">
               <span class="text-4xl sm:text-5xl font-bold text-brand-900 leading-none">৳৭৫০</span>
               <span class="text-slate-400 line-through text-base mb-1">৳১,১৫০</span>
             </div>
-            <p class="mt-1 text-xs font-bold text-emerald-600">৳৪০০ ইনস্ট্যান্ট ডিসকাউন্ট</p>
+            <p class="mt-1 text-xs font-bold text-emerald-600">৳৪০০ ইনস্ট্যান্ট সেভ!</p>
             
             <ul class="mt-5 space-y-2.5 text-sm text-slate-700 flex-1">
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ১টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৫টি আলাদা ব্রাশ হেড কিট</li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> টাইপ-সি ফাস্ট চার্জিং ক্যাবল</li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ক্যাশ অন ডেলিভারি সুবিধা</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ফাস্ট ইউএসবি ক্যাবল</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ক্যাশ অন ডেলিভারি</li>
             </ul>
 
             <button data-open-order data-package="1" class="btn mt-6 w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-6 py-3.5 rounded-xl text-base">
@@ -370,9 +457,9 @@
           </div>
 
           <!-- Package 2 (Most Popular) -->
-          <div class="price-card popular reveal d2 relative bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900 text-white rounded-3xl p-6 sm:p-7 shadow-soft flex flex-col md:-mt-3">
+          <div class="price-card popular relative bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900 text-white rounded-3xl p-6 sm:p-7 shadow-soft flex flex-col md:-mt-3">
             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-400 text-brand-950 text-xs font-extrabold px-5 py-1.5 rounded-full shadow-glow whitespace-nowrap">
-              <i class="fa-solid fa-fire mr-1"></i> মোস্ট পপুলার — সবচেয়ে বেশি বিক্রিত
+              <i class="fa-solid fa-fire mr-1"></i> সবচেয়ে বেশি বিক্রিত অফার
             </div>
             
             <div class="flex items-center justify-between mt-2">
@@ -381,7 +468,7 @@
             </div>
 
             <h3 class="mt-4 text-xl font-bold">২ পিস ব্রাশ সেট</h3>
-            <p class="text-brand-200 text-xs">রান্নাঘর ও বাথরুমের জন্য আলাদা আলাদা রাখুন</p>
+            <p class="text-brand-200 text-xs">কিচেন ও বাথরুমের জন্য আলাদা আলাদা রাখুন</p>
             
             <div class="mt-4 flex items-end gap-3">
               <span class="text-4xl sm:text-5xl font-bold text-gold-400 leading-none">৳১,৩৫০</span>
@@ -390,9 +477,9 @@
             <p class="mt-1 text-xs text-brand-200">প্রতি পিস মাত্র ৳৬৭৫ &nbsp;·&nbsp; <span class="text-gold-300 font-bold">অতিরিক্ত ৳১৫০ সেভ</span></p>
 
             <ul class="mt-5 space-y-2.5 text-sm text-brand-50 flex-1">
-              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি রিচার্জেবল ব্রাশ</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> মোট ১০টি প্রিমিয়াম ব্রাশ হেড</li>
-              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি ওয়াল হ্যাঙ্গার সম্পূর্ণ ফ্রি</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি ওয়াল হ্যাঙ্গার কিট সম্পূর্ণ ফ্রি</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ক্যাশ অন ডেলিভারি</li>
             </ul>
 
@@ -402,7 +489,7 @@
           </div>
 
           <!-- Package 3 -->
-          <div class="price-card reveal d3 bg-white border border-brand-100 rounded-3xl p-6 sm:p-7 shadow-card flex flex-col">
+          <div class="price-card bg-white border border-brand-100 rounded-3xl p-6 sm:p-7 shadow-card flex flex-col">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold text-brand-700 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">মেগা সেভার</span>
               <span class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-lg"><i class="fa-solid fa-warehouse"></i></span>
@@ -416,7 +503,7 @@
             <p class="mt-1 text-xs text-slate-500">প্রতি পিস ৳৬১৬ &nbsp;·&nbsp; <span class="text-brand-700 font-bold">৳৪০০ অতিরিক্ত সেভ</span></p>
 
             <ul class="mt-5 space-y-2.5 text-sm text-slate-700 flex-1">
-              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৩টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৩টি রিচার্জেবল ব্রাশ</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> মোট ১৫টি সম্পূর্ণ ব্রাশ হেড কিট</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৩টি ফাস্ট চার্জার ক্যাবল</li>
               <li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ক্যাশ অন ডেলিভারি</li>
@@ -428,8 +515,7 @@
           </div>
         </div>
 
-        <!-- Delivery Fee Banner -->
-        <div class="mt-10 max-w-2xl mx-auto bg-brand-50/80 border border-brand-200 rounded-2xl p-4 text-center">
+        <div class="mt-9 max-w-2xl mx-auto bg-brand-50/80 border border-brand-200 rounded-2xl p-4 text-center">
           <p class="text-sm font-semibold text-brand-950">
             <i class="fa-solid fa-truck text-brand-600 mr-1.5"></i> ডেলিভারি চার্জ: 
             <span class="text-brand-800 font-bold">ঢাকার ভিতরে ৳৭০</span> | 
@@ -442,25 +528,21 @@
     </section>
 
     <!-- ============================================================
-         4. DETAILED PRODUCT BREAKDOWN (PC & MOBILE OPTIMIZED)
+         6. DETAILED SPECIFICATIONS & HEAD BREAKDOWN
     ============================================================ -->
     <section id="details" class="soft-section py-14 md:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto">
-          <span class="reveal inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
-            <i class="fa-solid fa-microchip"></i> বিস্তারিত স্পেসিফিকেশন ও ব্রাশ হেড গাইড
+          <span class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-microchip"></i> বিস্তারিত স্পেসিফিকেশন ও গাইড
           </span>
-          <h2 class="reveal d1 mt-3 text-2xl sm:text-4xl font-bold text-brand-950 leading-tight">
+          <h2 class="mt-3 text-2xl sm:text-4xl font-bold text-brand-950 leading-tight">
             ৫টি আলাদা ব্রাশ হেড কীভাবে কাজ করে বিস্তারিত দেখুন
           </h2>
-          <p class="reveal d2 mt-2 text-sm sm:text-base text-slate-600">
-            প্রতিটি হেড নির্দিষ্ট সারফেসের ময়লা ও দাগ নিরাপদে দূর করার জন্য বৈজ্ঞানিকভাবে ডিজাইন করা।
-          </p>
         </div>
 
-        <!-- 5-in-1 Head Breakdown Grid -->
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="bg-white border border-brand-100 rounded-2xl p-5 shadow-card">
             <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-4">
               <i class="fa-solid fa-brush"></i>
@@ -468,7 +550,7 @@
             <h4 class="font-bold text-lg text-brand-950">১. নাইলন হার্ড ব্রাশ</h4>
             <p class="text-xs text-brand-600 font-semibold mt-0.5">টাইলস, গ্রাউট ও মেঝে</p>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              টাইলসের খাঁজের শ্যাওলা, বাথরুমের কোণ এবং মেঝের কঠিন ময়লা তুলতে এটি অতুলনীয়। শক্ত ব্রিসেলস হলেও টাইলসের গ্লেজ নষ্ট করে না।
+              টাইলসের খাঁজের শ্যাওলা, বাথরুমের কোণ এবং মেঝের কঠিন ময়লা তুলতে এটি অতুলনীয়। শক্ত ব্রিসেলস হলেও সারফেসের ক্ষতি করে না।
             </p>
           </div>
 
@@ -501,7 +583,7 @@
             <h4 class="font-bold text-lg text-brand-950">৪. পলিশিং মোপ প্যাড</h4>
             <p class="text-xs text-brand-600 font-semibold mt-0.5">আয়না, লেদার ও সোফা</p>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              ড্রেসিং টেবিলের আয়না, সোফার লেদার এবং গাড়ির গ্লাসে চকচকে ফিনিশ এনে দিতে ও দ্রুত ড্রিম পলিশ করতে এটি ব্যবহার করুন।
+              ড্রেসিং টেবিলের আয়না, সোফার লেদার এবং গাড়ির গ্লাসে চকচকে ফিনিশ এনে দিতে ও দ্রুত পলিশ করতে এটি ব্যবহার করুন।
             </p>
           </div>
 
@@ -523,135 +605,30 @@
             <h4 class="font-bold text-lg text-brand-950">৬. ইউএসবি রিচার্জেবল পাওয়ার</h4>
             <p class="text-xs text-brand-600 font-semibold mt-0.5">দীর্ঘস্থায়ী ব্যাটারি</p>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              বিল্ট-ইন ১২০০mAh লিথিয়াম ব্যাটারি যা সম্পূর্ণ ওয়াটার-রেসিস্ট্যান্ট। একবার ফুল চার্জে একটানা ২-৩ ঘণ্টা পুরো বাসার ডিপ ক্লিনিং সম্পন্ন করা যায়।
+              বিল্ট-ইন ১২০০mAh ব্যাটারি যা ওয়াটার-রেসিস্ট্যান্ট। একবার ফুল চার্জে একটানা ২-৩ ঘণ্টা পুরো বাসার ডিপ ক্লিনিং সম্পন্ন করা যায়।
             </p>
           </div>
         </div>
 
-        <!-- Tech Specs Table for Desktop & Mobile -->
-        <div class="mt-12 bg-white rounded-2xl border border-brand-200 overflow-hidden shadow-sm">
-          <div class="bg-brand-900 text-white px-6 py-3.5 font-bold text-base flex items-center gap-2">
-            <i class="fa-solid fa-clipboard-list text-gold-400"></i> টেকনিক্যাল স্পেসিফিকেশন চার্ট
+        <!-- Tech Specs Table -->
+        <div class="mt-10 bg-white rounded-2xl border border-brand-200 overflow-hidden shadow-sm">
+          <div class="bg-brand-900 text-white px-6 py-3 font-bold text-sm sm:text-base flex items-center gap-2">
+            <i class="fa-solid fa-clipboard-list text-gold-400"></i> টেকনিক্যাল স্পেসিফিকেশন
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-brand-100 text-sm">
-            <div class="p-4 space-y-3">
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">প্রোডাক্ট মডেল:</span><span class="font-bold text-brand-950">Magic Brush 5-in-1</span></div>
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">মোটর স্পিড:</span><span class="font-bold text-brand-950">২৮০–৩০০ RPM</span></div>
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">চার্জিং পোর্ট:</span><span class="font-bold text-brand-950">USB Type-C ফাস্ট চার্জ</span></div>
+            <div class="p-4 space-y-2.5">
+              <div class="flex justify-between"><span class="text-slate-500">প্রোডাক্ট মডেল:</span><span class="font-bold text-brand-950">Magic Brush 5-in-1</span></div>
+              <div class="flex justify-between"><span class="text-slate-500">মোটর স্পিড:</span><span class="font-bold text-brand-950">২৮০–৩০০ RPM</span></div>
+              <div class="flex justify-between"><span class="text-slate-500">চার্জিং পোর্ট:</span><span class="font-bold text-brand-950">USB Type-C ফাস্ট চার্জ</span></div>
             </div>
-            <div class="p-4 space-y-3">
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">ব্যাটারি ক্যাপাসিটি:</span><span class="font-bold text-brand-950">1200 mAh Lithium-ion</span></div>
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">ওয়াটারপ্রুফ রেটিং:</span><span class="font-bold text-brand-950">IPX7 Water Resistant</span></div>
-              <div class="flex justify-between"><span class="text-slate-500 font-medium">প্যাকেজে অন্তর্ভুক্ত:</span><span class="font-bold text-brand-950">ব্রাশ, ৫ হেড, ক্যাবল ও ওয়াল হুক</span></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ============================================================
-         5. AUTO IMAGE SLIDER
-    ============================================================ -->
-    <section id="slider" class="py-14 md:py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto">
-          <span class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
-            <i class="fa-solid fa-images"></i> ফটো গ্যালারি
-          </span>
-          <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-brand-950">প্রোডাক্টটির প্রতিটি অংশ কাছ থেকে দেখুন</h2>
-          <p class="mt-2 text-xs sm:text-sm text-slate-500">ছবিতে স্পর্শ করলে বা ক্লিক করলে স্লাইডারটি স্থির থাকবে</p>
-        </div>
-
-        <div class="relative mt-8 overflow-hidden rounded-3xl border border-brand-200 shadow-card bg-slate-900 group" id="sliderWrapper">
-          <div class="flex transition-transform duration-700 ease-out" id="sliderTrack">
-            <!-- Slide 1 -->
-            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80" alt="Full Set Overview" class="w-full h-full object-cover" />
-              <div class="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-0.5 rounded">কমপ্লিট প্যাকেজ</span>
-                <p class="font-bold text-sm sm:text-base mt-1">সব ধরনের ব্রাশ হেড সহ সম্পূর্ণ বক্স</p>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
-              <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80" alt="Kitchen cleaning" class="w-full h-full object-cover" />
-              <div class="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-0.5 rounded">রান্নাঘর</span>
-                <p class="font-bold text-sm sm:text-base mt-1">তেল চিটচিটে গ্যাসের চুলা পরিষ্কার করা এখন সহজ</p>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" alt="Bathroom tiles" class="w-full h-full object-cover" />
-              <div class="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-0.5 rounded">বাথরুম</span>
-                <p class="font-bold text-sm sm:text-base mt-1">টাইলসের খাঁজের শ্যাওলা ও পানির দাগ পরিষ্কার</p>
-              </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
-              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1200&q=80" alt="Easy Wash" class="w-full h-full object-cover" />
-              <div class="absolute inset-x-0 bottom-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-0.5 rounded">সহজ ওয়াশ</span>
-                <p class="font-bold text-sm sm:text-base mt-1">ব্যবহার শেষে সরাসরি পানিতে ধুয়ে ফেলুন</p>
-              </div>
+            <div class="p-4 space-y-2.5">
+              <div class="flex justify-between"><span class="text-slate-500">ব্যাটারি ক্যাপাসিটি:</span><span class="font-bold text-brand-950">1200 mAh Lithium-ion</span></div>
+              <div class="flex justify-between"><span class="text-slate-500">ওয়াটারপ্রুফ রেটিং:</span><span class="font-bold text-brand-950">IPX7 Water Resistant</span></div>
+              <div class="flex justify-between"><span class="text-slate-500">প্যাকেজে অন্তর্ভুক্ত:</span><span class="font-bold text-brand-950">ব্রাশ, ৫ হেড, ক্যাবল ও ওয়াল হুক</span></div>
             </div>
           </div>
-
-          <!-- Slider Arrows -->
-          <button id="sliderPrev" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-brand-950 flex items-center justify-center text-sm shadow transition-all" aria-label="Previous">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button id="sliderNext" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-brand-950 flex items-center justify-center text-sm shadow transition-all" aria-label="Next">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-
-          <!-- Dots -->
-          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10" id="sliderDots">
-            <button class="w-2.5 h-2.5 rounded-full bg-gold-400 transition-all scale-125" data-slide="0"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="1"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="2"></button>
-            <button class="w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="3"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         6. VERTICAL VIDEO DEMO (9:16 SHORTS / REELS)
-    ============================================================ -->
-    <section id="video" class="soft-section py-14 md:py-20">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto">
-          <span class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-gold-600 bg-gold-200/60 px-4 py-1.5 rounded-full">
-            <i class="fa-solid fa-play"></i> বাস্তব কাজের ভিডিও
-          </span>
-          <h2 class="mt-3 text-2xl sm:text-3xl font-bold text-brand-950">ভিডিওতে দেখুন এটি কতটা দ্রুত কাজ করে</h2>
         </div>
 
-        <div class="mt-8 flex justify-center">
-          <div class="phone-mockup w-full max-w-[320px] sm:max-w-[350px]">
-            <div class="w-20 h-3.5 bg-slate-800 mx-auto rounded-b-xl mb-1"></div>
-            <div class="relative w-full aspect-[9/16] bg-black">
-              <iframe 
-                class="w-full h-full object-cover"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&rel=0&modestbranding=1" 
-                title="Product Demo Video" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="w-28 h-1 bg-slate-700 mx-auto my-2 rounded-full"></div>
-          </div>
-        </div>
-
-        <div class="mt-8 text-center">
-          <button data-open-order class="btn cta-pulse inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold text-base sm:text-lg px-8 py-3.5 rounded-full">
-            <i class="fa-solid fa-cart-shopping"></i> ক্যাশ অন ডেলিভারিতে অর্ডার করুন
-          </button>
-        </div>
       </div>
     </section>
 
@@ -726,7 +703,7 @@
         <div>
           <h4 class="text-white font-bold text-sm">১০০% ক্যাশ অন ডেলিভারি</h4>
           <p class="mt-3 text-xs text-brand-200 leading-relaxed">
-            কোনো বিকাশ বা নগদ অগ্রিম পেমেন্টের ঝামেলা নেই। অর্ডার করুন, নিশ্চিন্তে পণ্য হাতে পেয়ে টাকা দিন।
+            কোনো অগ্রিম পেমেন্টের ঝুঁকি নেই। অর্ডার করুন, নিশ্চিন্তে পণ্য হাতে পেয়ে টাকা দিন।
           </p>
         </div>
       </div>
@@ -738,12 +715,12 @@
   </footer>
 
   <!-- ============================================================
-       9. STICKY BOTTOM ORDER BAR (MOBILE & DESKTOP)
+       9. STICKY BOTTOM ORDER BAR
   ============================================================ -->
-  <div id="stickyBottomBar" class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-brand-200 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] px-4 py-3 sm:py-3.5 transition-transform">
+  <div id="stickyBottomBar" class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-brand-200 shadow-[0_-8px_30px_rgba(0,0,0,0.12)] px-4 py-3 sm:py-3.5">
     <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
       <div class="leading-tight">
-        <span class="text-[11px] sm:text-xs text-slate-500 block font-medium">ক্যাশ অন ডেলিভারি অফার</span>
+        <span class="text-[11px] sm:text-xs text-slate-500 block font-medium">ক্যাশ অন ডেলিভারি</span>
         <span class="text-lg sm:text-2xl font-black text-brand-950">৳৭৫০ <span class="text-xs font-normal text-slate-500">থেকে শুরু</span></span>
       </div>
       <button data-open-order class="btn cta-pulse flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-extrabold text-sm sm:text-base px-6 py-3 rounded-full shadow-soft">
@@ -767,7 +744,6 @@
     <div id="modalBackdrop" class="absolute inset-0 bg-brand-950/75 backdrop-blur-sm"></div>
 
     <div class="modal-card relative w-full sm:max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl overflow-hidden max-h-[94vh] flex flex-col">
-      <!-- Header -->
       <div class="bg-gradient-to-r from-brand-900 to-brand-800 text-white px-6 py-4 flex items-center justify-between shrink-0">
         <div class="flex items-center gap-3">
           <span class="w-9 h-9 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-lg"><i class="fa-solid fa-cart-shopping"></i></span>
@@ -784,13 +760,11 @@
       <div class="modal-scroll overflow-y-auto">
         <!-- FORM VIEW -->
         <form id="orderForm" class="px-6 py-5" novalidate>
-          <!-- Product Name -->
           <div>
             <label class="block text-xs font-bold text-slate-700 mb-1">প্রোডাক্টের নাম</label>
             <input type="text" name="product" id="productName" value="5-in-1 Multifunctional Electric Cleaning Brush" readonly class="field bg-brand-50/70 font-semibold cursor-default text-sm py-2.5" />
           </div>
 
-          <!-- Quantity / Package -->
           <div class="mt-3.5">
             <label for="quantity" class="block text-xs font-bold text-slate-700 mb-1">প্যাকেজ বাছাই করুন</label>
             <select id="quantity" name="quantity" class="field font-bold text-brand-950 bg-white py-2.5">
@@ -800,28 +774,24 @@
             </select>
           </div>
 
-          <!-- Customer Name -->
           <div class="mt-3.5">
             <label for="customerName" class="block text-xs font-bold text-slate-700 mb-1">আপনার নাম <span class="text-red-500">*</span></label>
             <input type="text" id="customerName" name="name" placeholder="যেমন: মোঃ কামরুল ইসলাম" class="field py-2.5" autocomplete="name" required />
             <p class="field-error" data-error-for="customerName"><i class="fa-solid fa-circle-exclamation"></i> অনুগ্রহ করে আপনার নাম লিখুন</p>
           </div>
 
-          <!-- Phone Number -->
           <div class="mt-3.5">
             <label for="phone" class="block text-xs font-bold text-slate-700 mb-1">মোবাইল নাম্বার <span class="text-red-500">*</span></label>
             <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx (১১ ডিজিট)" class="field py-2.5" inputmode="numeric" maxlength="14" autocomplete="tel" required />
             <p class="field-error" data-error-for="phone"><i class="fa-solid fa-circle-exclamation"></i> সঠিক ১১ ডিজিটের মোবাইল নাম্বার দিন (01 দিয়ে শুরু)</p>
           </div>
 
-          <!-- Address -->
           <div class="mt-3.5">
             <label for="address" class="block text-xs font-bold text-slate-700 mb-1">সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label>
             <textarea id="address" name="address" rows="2" placeholder="বাড়ি নং, রোড নং, এলাকা, থানা ও জেলা" class="field resize-none py-2.5" autocomplete="street-address" required></textarea>
             <p class="field-error" data-error-for="address"><i class="fa-solid fa-circle-exclamation"></i> সম্পূর্ণ ঠিকানা লিখুন (কমপক্ষে ১০ অক্ষর)</p>
           </div>
 
-          <!-- Delivery Area -->
           <div class="mt-3.5">
             <label class="block text-xs font-bold text-slate-700 mb-1">ডেলিভারি এলাকা</label>
             <div class="grid grid-cols-2 gap-3">
@@ -836,7 +806,7 @@
             </div>
           </div>
 
-          <!-- Payment Method (ONLY Cash on Delivery) -->
+          <!-- Cash On Delivery Notification -->
           <div class="mt-4">
             <label class="block text-xs font-bold text-slate-700 mb-1">পেমেন্ট মেথড</label>
             <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center gap-3">
@@ -848,7 +818,7 @@
             </div>
           </div>
 
-          <!-- Order Cost Summary -->
+          <!-- Order Summary -->
           <div class="mt-4 bg-brand-50 border border-brand-100 rounded-2xl p-4 text-sm">
             <div class="flex justify-between text-slate-700">
               <span>প্যাকেজ মূল্য (<span id="sumPkg">২ পিস</span>)</span>
@@ -865,7 +835,6 @@
             </div>
           </div>
 
-          <!-- Submit Button -->
           <button type="submit" id="submitBtn" class="btn mt-5 w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-bold text-lg px-6 py-4 rounded-xl shadow-soft">
             <span class="btn-text inline-flex items-center gap-2"><i class="fa-solid fa-circle-check"></i> অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)</span>
             <span class="btn-loading hidden items-center gap-2"><span class="spinner"></span> প্রসেস হচ্ছে...</span>
@@ -879,14 +848,14 @@
           </div>
           <h3 class="mt-4 text-2xl font-bold text-brand-950">ধন্যবাদ! অর্ডার সফল হয়েছে 🎉</h3>
           <p class="mt-1.5 text-slate-600 text-sm leading-relaxed">
-            আপনার ক্যাশ অন ডেলিভারি অর্ডারটি গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি দ্রুত কল দিয়ে পার্সেল কনফার্ম করবেন।
+            আপনার ক্যাশ অন ডেলিভারি অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি দ্রুত কল দিয়ে পার্সেল কনফার্ম করবেন।
           </p>
 
           <div id="successSummary" class="mt-5 bg-brand-50 border border-brand-100 rounded-2xl p-4 text-left text-xs sm:text-sm space-y-2"></div>
 
           <div class="mt-5 flex flex-col sm:flex-row gap-3">
             <a href="#" data-wa-link target="_blank" rel="noopener" class="btn flex-1 inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fbd5a] text-white font-bold px-4 py-3 rounded-xl text-sm">
-              <i class="fa-brands fa-whatsapp text-base"></i> হোয়াটসঅ্যাপে কনফার্ম করুন
+              <i class="fa-brands fa-whatsapp text-base"></i> হোয়াটসঅ্যাপে নিশ্চিত করুন
             </a>
             <button id="successClose" class="btn flex-1 inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-4 py-3 rounded-xl text-sm">
               <i class="fa-solid fa-house"></i> হোমে ফিরুন
@@ -911,7 +880,7 @@
   </div>
 
   <!-- ============================================================
-       13. CORE JAVASCRIPT
+       13. JAVASCRIPT
   ============================================================ -->
   <script>
     const CONFIG = {
@@ -950,24 +919,12 @@
 
     $('#year').textContent = new Date().getFullYear();
 
-    // WhatsApp Links
     (function setupWhatsApp() {
       const msg = encodeURIComponent(`আসসালামু আলাইকুম, আমি ${CONFIG.STORE_NAME} থেকে 5-in-1 Electric Cleaning Brush অর্ডার করতে চাই।`);
       const url = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${msg}`;
       $$('[data-wa-link]').forEach(a => { a.href = url; a.target = '_blank'; a.rel = 'noopener'; });
     })();
 
-    // Reveal Observer
-    (function setupReveal() {
-      const els = $$('.reveal');
-      if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in-view')); return; }
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in-view'); io.unobserve(en.target); } });
-      }, { threshold: 0.1 });
-      els.forEach(e => io.observe(e));
-    })();
-
-    // FAQ Accordion
     (function setupFaq() {
       const items = $$('.faq-item');
       items.forEach(item => {
@@ -981,7 +938,7 @@
       if (items[0]) items[0].classList.add('open');
     })();
 
-    // Auto Image Slider
+    // 1:1 Auto Image Slider with Pause on interaction
     (function setupSlider() {
       const track = $('#sliderTrack');
       const dots = $$('#sliderDots button');
@@ -1055,7 +1012,6 @@
       modal.classList.add('open');
       document.body.classList.add('no-scroll');
 
-      // Pixel Track InitiateCheckout
       if (typeof fbq === 'function') {
         fbq('track', 'InitiateCheckout', {
           content_name: $('#productName').value,
@@ -1222,7 +1178,6 @@
       }
     });
 
-    // Fake Live Sales Toast
     function showRandomSalesPopup() {
       const popup = $('#liveSalesPopup');
       const randomBuyer = fakeBuyers[Math.floor(Math.random() * fakeBuyers.length)];
