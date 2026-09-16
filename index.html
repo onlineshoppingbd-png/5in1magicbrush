@@ -1,1 +1,1662 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanHome BD | 5-in-1 Electric Cleaning Brush — চোখের পলকে ময়লা সাফ!</title>
+  <meta name="description" content="ম্যাজিক ৫-ইন-১ রিচার্জেবল ইলেকট্রিক ক্লিনিং ব্রাশ। কিচেন, বাথরুম, বেসিন ও টাইলসের জেদি দাগ পরিষ্কার করুন কোনো কষ্ট ছাড়াই। ক্যাশ অন ডেলিভারি, সারাদেশে হোম ডেলিভারি।" />
+  <meta name="theme-color" content="#0369a1" />
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <!-- Google Font: Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { bangla: ['"Hind Siliguri"', 'sans-serif'] },
+          colors: {
+            brand: {
+              50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8',
+              500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e', 950: '#082f49'
+            },
+            gold: { 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+          },
+          boxShadow: {
+            soft: '0 10px 40px -12px rgba(3, 105, 161, 0.25)',
+            card: '0 4px 24px -6px rgba(8, 47, 73, 0.12)',
+            glow: '0 0 45px rgba(251, 191, 36, 0.45)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ============ Base ============ */
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body { font-family: 'Hind Siliguri', sans-serif; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #fbbf24; color: #082f49; }
+
+    /* ============ Backgrounds ============ */
+    .hero-bg {
+      background:
+        radial-gradient(1200px 600px at 85% -10%, rgba(251, 191, 36, 0.20), transparent 60%),
+        radial-gradient(900px 500px at -10% 110%, rgba(56, 189, 248, 0.25), transparent 60%),
+        linear-gradient(135deg, #082f49 0%, #0c4a6e 55%, #0369a1 100%);
+    }
+    .grid-pattern {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    }
+    .dark-section {
+      background:
+        radial-gradient(800px 400px at 100% 0%, rgba(251,191,36,0.15), transparent 60%),
+        linear-gradient(160deg, #0c4a6e 0%, #082f49 100%);
+    }
+    .soft-section { background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%); }
+    .dots-pattern {
+      background-image: radial-gradient(rgba(3, 105, 161, 0.12) 1px, transparent 1px);
+      background-size: 22px 22px;
+    }
+
+    /* ============ Scroll Reveal ============ */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .75s cubic-bezier(.2,.7,.2,1), transform .75s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in-view { opacity: 1; transform: none; }
+    .reveal-left { transform: translateX(-30px); }
+    .reveal-right { transform: translateX(30px); }
+    .d1 { transition-delay: .08s } .d2 { transition-delay: .16s } .d3 { transition-delay: .24s }
+    .d4 { transition-delay: .32s } .d5 { transition-delay: .40s } .d6 { transition-delay: .48s }
+
+    /* ============ Animations ============ */
+    @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
+    @keyframes floatSlow { 0%,100% { transform: translateY(0) rotate(-2deg) } 50% { transform: translateY(-8px) rotate(-2deg) } }
+    @keyframes floatSlow2 { 0%,100% { transform: translateY(0) rotate(2deg) } 50% { transform: translateY(-8px) rotate(2deg) } }
+    .animate-float { animation: float 4.5s ease-in-out infinite; }
+    .animate-float-slow { animation: floatSlow 5s ease-in-out infinite; }
+    .animate-float-slow2 { animation: floatSlow2 6s ease-in-out infinite 0.6s; }
+
+    @keyframes ctaPulse {
+      0% { box-shadow: 0 0 0 0 rgba(251,191,36,.7), 0 10px 30px -8px rgba(245,158,11,.6) }
+      70% { box-shadow: 0 0 0 18px rgba(251,191,36,0), 0 10px 30px -8px rgba(245,158,11,.6) }
+      100% { box-shadow: 0 0 0 0 rgba(251,191,36,0), 0 10px 30px -8px rgba(245,158,11,.6) }
+    }
+    .cta-pulse { animation: ctaPulse 2.2s infinite; }
+
+    @keyframes waPulse { 0% { transform: scale(1); opacity: .75 } 100% { transform: scale(1.8); opacity: 0 } }
+    @keyframes waBounce { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
+    .wa-btn { animation: waBounce 2.4s ease-in-out infinite; }
+    .wa-ring::before, .wa-ring::after {
+      content: ''; position: absolute; inset: 0; border-radius: 9999px;
+      background: rgba(37, 211, 102, .55); animation: waPulse 2s ease-out infinite; z-index: -1;
+    }
+    .wa-ring::after { animation-delay: 1s; }
+
+    @keyframes shimmer { 0% { background-position: -200% 0 } 100% { background-position: 200% 0 } }
+    .shimmer-text {
+      background: linear-gradient(90deg, #fcd34d 0%, #ffffff 40%, #fbbf24 60%, #f59e0b 100%);
+      background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent;
+      animation: shimmer 4s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg) } }
+    .spinner { width: 20px; height: 20px; border: 3px solid rgba(255,255,255,.35); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite; }
+
+    @keyframes popIn { 0% { transform: scale(.4); opacity: 0 } 60% { transform: scale(1.12); opacity: 1 } 100% { transform: scale(1) } }
+    .pop-in { animation: popIn .6s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes drawCheck { to { stroke-dashoffset: 0 } }
+    .check-path { stroke-dasharray: 60; stroke-dashoffset: 60; animation: drawCheck .5s ease .35s forwards; }
+
+    /* ============ Header ============ */
+    #header { transition: box-shadow .3s ease, background-color .3s ease, border-color .3s ease; }
+    #header.scrolled { box-shadow: 0 12px 32px -18px rgba(8,47,73,.5); background-color: rgba(255,255,255,.97); }
+    .nav-link { position: relative; border: 1px solid transparent; border-radius: 999px; padding: 8px 14px; transition: all .25s ease; }
+    .nav-link:hover, .nav-link.active { color: #0284c7; background: #f0f9ff; border-color: #bae6fd; }
+
+    /* ============ Cards ============ */
+    .feature-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s, border-color .35s; }
+    .feature-card:hover { transform: translateY(-6px) scale(1.015); box-shadow: 0 20px 40px -18px rgba(2,132,199,.25); border-color: #7dd3fc; }
+    .feature-card:hover .icon-wrap { transform: rotate(-8deg) scale(1.1); background: #0c4a6e; color: #fbbf24; }
+
+    .tilt-card { transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s; }
+    .tilt-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 22px 45px -18px rgba(8,47,73,.35); }
+    .tilt-card img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+    .tilt-card:hover img { transform: scale(1.08); }
+
+    .price-card { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+    .price-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 30px 60px -20px rgba(8,47,73,.3); }
+    .price-card.popular { border: 2px solid rgba(251,191,36,.85); box-shadow: 0 24px 60px -18px rgba(245,158,11,.45); }
+
+    .btn { transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s; }
+    .btn:hover { transform: translateY(-2px) scale(1.02); }
+    .btn:active { transform: translateY(0) scale(.98); }
+
+    /* ============ FAQ ============ */
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.2,.8,.2,1), padding .3s; }
+    .faq-item.open .faq-answer { max-height: 320px; }
+    .faq-icon { transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+    .faq-item.open .faq-icon { transform: rotate(180deg); background: #0c4a6e; color: #fbbf24; }
+
+    /* ============ Modal ============ */
+    .modal { opacity: 0; visibility: hidden; transition: opacity .35s ease, visibility .35s; }
+    .modal.open { opacity: 1; visibility: visible; }
+    .modal-card { transform: scale(.92) translateY(24px); opacity: 0; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .35s; }
+    .modal.open .modal-card { transform: none; opacity: 1; }
+    .modal-scroll { scrollbar-width: thin; scrollbar-color: #bae6fd transparent; }
+
+    .field { width: 100%; border: 1.5px solid #bae6fd; background: #f8fafc; border-radius: 12px; padding: 12px 14px; font-size: 15px; outline: none; color: #082f49; transition: all .25s; }
+    .field:focus { border-color: #0284c7; background: #fff; box-shadow: 0 0 0 4px rgba(14,165,233,.15); }
+    .field.error { border-color: #ef4444; background: #fff5f5; }
+    .field-error { display: none; color: #dc2626; font-size: 13px; margin-top: 6px; }
+    .field-error.show { display: flex; align-items: center; gap: 6px; }
+
+    .radio-pill input { position: absolute; opacity: 0; pointer-events: none; }
+    .radio-pill .pill { border: 1.5px solid #bae6fd; background: #f8fafc; border-radius: 12px; padding: 10px 12px; cursor: pointer; transition: all .25s; display: flex; align-items: center; gap: 8px; justify-content: center; font-weight: 500; color: #0369a1; }
+    .radio-pill input:checked + .pill { border-color: #0284c7; background: #0c4a6e; color: #fff; box-shadow: 0 8px 20px -10px rgba(8,47,73,.5); }
+
+    #trxWrap { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s cubic-bezier(.2,.8,.2,1), opacity .3s, margin .3s; margin-top: 0; }
+    #trxWrap.show { max-height: 280px; opacity: 1; margin-top: 16px; }
+
+    /* ============ Marquee ============ */
+    @keyframes marquee { 0% { transform: translateX(0) } 100% { transform: translateX(-50%) } }
+    .marquee { animation: marquee 25s linear infinite; }
+    .marquee:hover { animation-play-state: paused; }
+    .no-scroll { overflow: hidden; }
+
+    /* Smartphone Frame for Shorts/Reels */
+    .phone-mockup {
+      border: 10px solid #1e293b;
+      border-radius: 40px;
+      box-shadow: 0 25px 60px -15px rgba(8,47,73,0.5), 0 0 0 1px rgba(255,255,255,0.1);
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+</head>
+
+<body class="font-bangla text-slate-800 bg-white antialiased">
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" alt="" /></noscript>
+
+  <!-- ============================================================
+       1. STICKY HEADER
+  ============================================================ -->
+  <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-[68px] md:h-[76px]">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 text-gold-400 flex items-center justify-center text-xl shadow-soft group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="leading-tight">
+            <span class="block text-xl md:text-2xl font-bold text-brand-950 tracking-tight">CleanHome<span class="text-gold-500">BD</span></span>
+            <span class="hidden sm:block text-[11px] md:text-xs text-brand-700 -mt-0.5 font-medium">স্মার্ট হোম ক্লিনিং সল্যুশন</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-1 rounded-full border border-brand-100 bg-white/80 p-1 font-medium text-[15px] text-brand-950 shadow-sm">
+          <a href="#home" class="nav-link">হোম</a>
+          <a href="#slider" class="nav-link">প্রোডাক্ট শোকেস</a>
+          <a href="#features" class="nav-link">ফিচারস</a>
+          <a href="#video" class="nav-link">ডেমো ভিডিও</a>
+          <a href="#pricing" class="nav-link">প্রাইসিং</a>
+          <a href="#faq" class="nav-link">প্রশ্নোত্তর</a>
+        </nav>
+
+        <!-- CTA Button + Burger -->
+        <div class="flex items-center gap-3">
+          <span class="hidden xl:flex items-center gap-2 text-xs font-semibold text-brand-700"><i class="fa-solid fa-truck-fast text-brand-500"></i> ক্যাশ অন ডেলিভারি</span>
+          <button data-open-order class="btn hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold px-5 py-2.5 rounded-full shadow-soft hover:shadow-glow">
+            <i class="fa-solid fa-cart-shopping"></i> অর্ডার করুন
+          </button>
+          <button id="burgerBtn" class="lg:hidden flex flex-col justify-center gap-1.5 w-10 h-10 rounded-xl bg-brand-50 border border-brand-100 items-center" aria-label="মেনু">
+            <span class="w-5 h-0.5 bg-brand-900 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-brand-900 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-brand-900 rounded-full"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-brand-100 px-4 py-4 space-y-2">
+      <a href="#home" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">হোম</a>
+      <a href="#slider" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">প্রোডাক্ট শোকেস</a>
+      <a href="#features" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">ফিচারস</a>
+      <a href="#video" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">ভিডিও রিভিউ</a>
+      <a href="#pricing" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">প্রাইসিং</a>
+      <a href="#faq" class="block px-3 py-2 rounded-lg text-brand-950 font-medium hover:bg-brand-50">প্রশ্নোত্তর</a>
+      <button data-open-order class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold py-3 rounded-xl shadow-soft">
+        <i class="fa-solid fa-cart-shopping"></i> এখনই অর্ডার করুন
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         2. HERO SECTION
+    ============================================================ -->
+    <section id="home" class="hero-bg relative overflow-hidden text-white">
+      <div class="absolute inset-0 grid-pattern"></div>
+      <div class="absolute -top-24 -right-24 w-80 h-80 bg-gold-400/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-20 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-20 md:pb-24 lg:pt-24 lg:pb-28">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-10 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="text-center lg:text-left order-2 lg:order-1">
+            <div class="reveal inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur px-4 py-1.5 rounded-full text-sm font-medium text-brand-100 mb-6">
+              <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-pulse"></span>
+              ২০২৬ সালের মোস্ট ভাইরাল কিচেন ও বাথরুম ক্লিনার
+            </div>
+            
+            <h1 class="reveal d1 text-4xl sm:text-5xl lg:text-[3.3rem] xl:text-6xl font-bold leading-[1.18] tracking-tight">
+              ঘরের সব জেদি ময়লা সাফ করুন<br class="hidden sm:block" />
+              <span class="shimmer-text">চোখের পলকে!</span> ✨
+            </h1>
+
+            <p class="reveal d2 mt-5 text-base sm:text-lg text-brand-100/90 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              হাতে ঘষাঘষির দিন শেষ! শক্তিশালী <span class="text-white font-semibold">5-in-1 Multifunctional Electric Cleaning Brush</span> দিয়ে কিচেন বেসিন, টাইলস, গ্যাস স্টোভ ও বাথরুমের তেল-চিটচিটে দাগ পরিষ্কার করুন বিনা পরিশ্রমে।
+            </p>
+
+            <div class="reveal d3 mt-6 flex items-center justify-center lg:justify-start gap-4 flex-wrap">
+              <div class="flex items-baseline gap-1.5">
+                <span class="text-brand-200 text-sm">অফার মূল্য মাত্র</span>
+                <span class="text-3xl sm:text-4xl font-extrabold text-gold-400">৳৭৫০</span>
+                <span class="text-brand-300 line-through text-sm">৳১,১৫০</span>
+              </div>
+              <span class="hidden sm:inline-block w-px h-6 bg-white/20"></span>
+              <div class="flex items-center gap-1 text-gold-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <span class="text-brand-100 ml-1 font-semibold">৪.৯ (৩,৮০০+ রিভিউ)</span>
+              </div>
+            </div>
+
+            <div class="reveal d4 mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <button data-open-order class="btn cta-pulse w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-brand-950 font-bold text-lg px-8 py-4 rounded-full">
+                <i class="fa-solid fa-bolt"></i> এখনই অর্ডার করুন
+                <i class="fa-solid fa-arrow-right text-base"></i>
+              </button>
+              <a href="#video" class="btn w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold px-7 py-4 rounded-full backdrop-blur">
+                <i class="fa-solid fa-circle-play text-gold-400"></i> ভিডিও ডেমো দেখুন
+              </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="reveal d5 mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-sm font-medium text-brand-100">
+              <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-300"></i> ক্যাশ অন ডেলিভারি</span>
+              <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-300"></i> সারাদেশে হোম ডেলিভারি</span>
+              <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-300"></i> ইউএসবি রিচার্জেবল</span>
+            </div>
+          </div>
+
+          <!-- Product Hero Image Showcase -->
+          <div class="reveal reveal-right relative order-1 lg:order-2 max-w-md mx-auto w-full">
+            <div class="absolute inset-4 bg-gradient-to-tr from-gold-400/40 via-brand-300/20 to-transparent blur-3xl rounded-full"></div>
+            <div class="relative animate-float">
+              <div class="relative rounded-[2.2rem] p-2 bg-white/10 border border-white/20 backdrop-blur shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="5 in 1 Electric Cleaning Brush" class="w-full rounded-[1.8rem] object-cover aspect-[4/4.5]" />
+              </div>
+              
+              <!-- Floating Chips -->
+              <div class="animate-float-slow absolute -left-4 sm:-left-6 top-8 bg-white text-brand-950 rounded-2xl px-4 py-2.5 shadow-soft flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-lg"><i class="fa-solid fa-battery-three-quarters"></i></span>
+                <div class="leading-tight">
+                  <div class="text-xs text-slate-500">ব্যাটারি ব্যাকআপ</div>
+                  <div class="font-bold text-sm">২–৩ ঘণ্টা একটানা</div>
+                </div>
+              </div>
+
+              <div class="animate-float-slow2 absolute -right-3 sm:-right-6 bottom-10 bg-white text-brand-950 rounded-2xl px-4 py-2.5 shadow-soft flex items-center gap-3">
+                <span class="w-9 h-9 rounded-xl bg-gold-200 text-gold-600 flex items-center justify-center text-lg"><i class="fa-solid fa-layer-group"></i></span>
+                <div class="leading-tight">
+                  <div class="text-xs text-slate-500">হেড অ্যাক্সেসরিজ</div>
+                  <div class="font-bold text-sm">৫ ধরনের ব্রাশ হেড</div>
+                </div>
+              </div>
+
+              <div class="absolute -top-3 right-6 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold text-xs px-3 py-1.5 rounded-full shadow-lg">
+                <i class="fa-solid fa-fire"></i> মেগা অফার
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Trust Marquee Ticker -->
+      <div class="relative border-t border-white/10 bg-black/20 backdrop-blur-sm py-3.5 overflow-hidden">
+        <div class="marquee flex w-max gap-10 text-sm font-medium text-brand-100 whitespace-nowrap">
+          <span class="flex gap-10">
+            <span><i class="fa-solid fa-truck-fast text-gold-400 mr-2"></i>ঢাকায় ১-২ দিনে এবং বাইরে ২-৩ দিনে ডেলিভারি</span>
+            <span><i class="fa-solid fa-hand-holding-dollar text-gold-400 mr-2"></i>পণ্য হাতে পেয়ে দেখে মূল্য পরিশোধ</span>
+            <span><i class="fa-solid fa-shield-halved text-gold-400 mr-2"></i>১০০% অরিজিনাল কোয়ালিটি গ্যারান্টি</span>
+            <span><i class="fa-solid fa-rotate-left text-gold-400 mr-2"></i>সহজ রিপ্লেসমেন্ট সুবিধা</span>
+            <span><i class="fa-solid fa-headset text-gold-400 mr-2"></i>২৪/৭ আন্তরিক কাস্টমার সাপোর্ট</span>
+          </span>
+          <span class="flex gap-10" aria-hidden="true">
+            <span><i class="fa-solid fa-truck-fast text-gold-400 mr-2"></i>ঢাকায় ১-২ দিনে এবং বাইরে ২-৩ দিনে ডেলিভারি</span>
+            <span><i class="fa-solid fa-hand-holding-dollar text-gold-400 mr-2"></i>পণ্য হাতে পেয়ে দেখে মূল্য পরিশোধ</span>
+            <span><i class="fa-solid fa-shield-halved text-gold-400 mr-2"></i>১০০% অরিজিনাল কোয়ালিটি গ্যারান্টি</span>
+            <span><i class="fa-solid fa-rotate-left text-gold-400 mr-2"></i>সহজ রিপ্লেসমেন্ট সুবিধা</span>
+            <span><i class="fa-solid fa-headset text-gold-400 mr-2"></i>২৪/৭ আন্তরিক কাস্টমার সাপোর্ট</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. INTERACTIVE AUTO-SLIDING CAROUSEL
+    ============================================================ -->
+    <section id="slider" class="py-16 md:py-24 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-images"></i> বিস্তারিত ছবি দেখুন
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            প্রোডাক্টটির প্রতিটি কোণ নিখুঁতভাবে দেখুন
+          </h2>
+          <p class="reveal d2 mt-3 text-slate-600">
+            ছবিতে ক্লিক করলে বা টাচ করলে অটো-স্লাইডারটি থেমে যাবে যাতে আপনি নিশ্চিন্তে দেখতে পারেন।
+          </p>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="relative mt-12 overflow-hidden rounded-3xl border border-brand-100 shadow-card bg-slate-900 group" id="sliderWrapper">
+          <div class="flex transition-transform duration-700 ease-out" id="sliderTrack">
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80" alt="Full Set Overview" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-1 rounded-md">অল-ইন-ওয়ান সেট</span>
+                <p class="mt-1 font-bold text-lg">৫টি আলাদা ব্রাশ হেড সহ কমপ্লিট প্যাকেজ</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80" alt="Kitchen cleaning" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-1 rounded-md">কিচেন ও সিংক</span>
+                <p class="mt-1 font-bold text-lg">তেল চিটচিটে চুলা ও পানির দাগ পরিষ্কারে অনন্য</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" alt="Bathroom tiles cleaning" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-1 rounded-md">বাথরুম টাইলস</span>
+                <p class="mt-1 font-bold text-lg">টাইলসের খাঁজের শ্যাওলা ও ময়লা তুলে ফেলে সেকেন্ডে</p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="w-full flex-shrink-0 relative aspect-[16/10] sm:aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1200&q=80" alt="USB Rechargeable Battery" class="w-full h-full object-cover" />
+              <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white">
+                <span class="text-xs bg-gold-500 text-brand-950 font-bold px-2.5 py-1 rounded-md">ইউএসবি চার্জিং</span>
+                <p class="mt-1 font-bold text-lg">কোনো তারের ঝামেলা নেই — যে কোনো স্থানে চার্জ করুন</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <button id="sliderPrev" class="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/80 hover:bg-white text-brand-950 flex items-center justify-center text-lg shadow-md transition-all opacity-80 group-hover:opacity-100 hover:scale-110" aria-label="পূর্ববর্তী ছবি">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="sliderNext" class="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/80 hover:bg-white text-brand-950 flex items-center justify-center text-lg shadow-md transition-all opacity-80 group-hover:opacity-100 hover:scale-110" aria-label="পরবর্তী ছবি">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Dot Indicators -->
+          <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10" id="sliderDots">
+            <button class="w-3 h-3 rounded-full bg-gold-400 transition-all scale-125" data-slide="0"></button>
+            <button class="w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="1"></button>
+            <button class="w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="2"></button>
+            <button class="w-3 h-3 rounded-full bg-white/60 hover:bg-white transition-all" data-slide="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. FEATURES & BENEFITS
+    ============================================================ -->
+    <section id="features" class="soft-section relative py-16 md:py-24">
+      <div class="absolute inset-0 dots-pattern opacity-60 pointer-events-none"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-sparkles"></i> কেন এটি ব্যবহার করবেন?
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            দৈনন্দিন ক্লিনিং হবে এখন খেলাচ্ছলে!
+          </h2>
+          <p class="reveal d2 mt-3 text-slate-600">
+            হাত ব্যথা করে আর মাজুনি দিয়ে ঘণ্টার পর ঘণ্টা ঘষাঘষি নয় — সুইচ টিপলেই দ্রুত ঘূর্ণন গতিতে দাগ গায়েব।
+          </p>
+        </div>
+
+        <div class="mt-12 md:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="feature-card reveal d1 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">হাই-স্পিড শক্তিশালী মোটর</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">প্রতি মিনিটে ২৮০+ বার ঘূর্ণন গতিতে কঠিন থেকে কঠিনতম তেল-কালির দাগ চোখের পলকে তুলে ফেলে।</p>
+          </div>
+
+          <div class="feature-card reveal d2 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">৫ ধরনের ব্রাশ হেড</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">নাইলন ব্রাশ, স্পঞ্জ প্যাড, স্টিল উল, পলিশিং ক্লথ সহ ৫টি হেড যা সব ধরনের সারফেসে ব্যবহার উপযোগী।</p>
+          </div>
+
+          <div class="feature-card reveal d3 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-water"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">IPX7 ওয়াটারপ্রুফ বডি</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">পানির নিচে ধুয়ে ফেলার সম্পূর্ণ নিরাপদ সুবিধা। বাথরুমে পানির ছিটায় নষ্ট হওয়ার কোনো ভয় নেই।</p>
+          </div>
+
+          <div class="feature-card reveal d4 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-battery-full"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">রিচার্জেবল লিথিয়াম ব্যাটারি</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">একবার চার্জে একটানা ২-৩ ঘণ্টা কাজ করে। টাইপ-সি ক্যাবল দিয়ে যেকোনো পাওয়ার ব্যাংক বা অ্যাডাপ্টারে চার্জ হয়।</p>
+          </div>
+
+          <div class="feature-card reveal d5 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-hand-sparkles"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">হালকা ও সুবিধাজনক গ্রিপ</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">অ্যারগনোমিক হ্যান্ডেল ডিজাইন যা পিচ্ছিল হয় না এবং দীর্ঘক্ষণ ব্যবহারে হাতে ব্যথা হয় না।</p>
+          </div>
+
+          <div class="feature-card reveal d6 bg-white border border-brand-100 rounded-2xl p-6 shadow-card">
+            <div class="icon-wrap w-14 h-14 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-2xl transition-all"><i class="fa-solid fa-shield-heart"></i></div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">সারফেসের ক্ষতি করে না</h3>
+            <p class="mt-2 text-slate-600 text-[15px] leading-relaxed">দামি টাইলস, সিরামিক বেসিন কিংবা মার্বেলের চকচকে ভাব নষ্ট না করেই দাগ দূর করে পুরোপুরি।</p>
+          </div>
+
+          <!-- Wide Promo Card -->
+          <div class="reveal sm:col-span-2 lg:col-span-3 bg-gradient-to-r from-brand-950 via-brand-900 to-brand-800 border border-brand-700 rounded-3xl p-6 md:p-8 text-white flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-card">
+            <div class="flex items-start gap-4">
+              <span class="w-14 h-14 shrink-0 rounded-2xl bg-white/10 text-gold-400 flex items-center justify-center text-3xl"><i class="fa-solid fa-gift"></i></span>
+              <div>
+                <h3 class="text-xl font-bold">আজকের অর্ডারে পাচ্ছেন সম্পূর্ণ ফ্রি অ্যাক্সেসরিজ কিট!</h3>
+                <p class="mt-1 text-brand-200 text-sm md:text-base leading-relaxed">প্রতিটি ব্রাশের সাথে ফ্রি পাচ্ছেন ওয়াল-মাউন্টিং হোল্ডার এবং ইউএসবি ফাস্ট চার্জিং ক্যাবল। স্টক সীমিত!</p>
+              </div>
+            </div>
+            <button data-open-order class="btn shrink-0 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-brand-950 font-bold px-7 py-3.5 rounded-full shadow-soft whitespace-nowrap">
+              অর্ডার কনফার্ম করুন <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. VERTICAL VIDEO SHOWCASE (YouTube Shorts / Reels)
+    ============================================================ -->
+    <section id="video" class="py-16 md:py-24 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-gold-600 bg-gold-200/60 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-play"></i> রিয়েল ডেমো
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            ভিডিওতে দেখে নিন প্রোডাক্টটির চমৎকার কার্যক্ষমতা
+          </h2>
+          <p class="reveal d2 mt-3 text-slate-600">
+            বাস্তবে এটি কীভাবে কাজ করে তা নিজে দেখে ১০০% নিশ্চিত হয়ে অর্ডার করুন।
+          </p>
+        </div>
+
+        <div class="mt-12 flex justify-center">
+          <!-- Smartphone Mockup Container (9:16 Aspect Ratio) -->
+          <div class="phone-mockup w-full max-w-[340px] sm:max-w-[370px]">
+            <!-- Top Speaker Bar -->
+            <div class="w-24 h-4 bg-slate-800 mx-auto rounded-b-xl mb-1"></div>
+            <!-- Video Container -->
+            <div class="relative w-full aspect-[9/16] bg-black">
+              <!-- Replace the embed URL below with your actual Shorts/Reels/Video link -->
+              <iframe 
+                class="w-full h-full object-cover"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&rel=0&modestbranding=1" 
+                title="Product Demo Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <!-- Bottom Home Indicator -->
+            <div class="w-32 h-1 bg-slate-700 mx-auto my-2 rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <button data-open-order class="btn cta-pulse inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold text-lg px-8 py-3.5 rounded-full">
+            <i class="fa-solid fa-cart-shopping"></i> পছন্দ হলে এখনই অর্ডার করুন
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. REAL USAGE GALLERY
+    ============================================================ -->
+    <section id="gallery" class="soft-section py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-camera"></i> রিয়েল ইউজেস
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            যেখানে যেখানে ব্যবহার করতে পারবেন
+          </h2>
+        </div>
+
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <figure class="tilt-card reveal d1 group relative rounded-2xl overflow-hidden shadow-card bg-brand-50">
+            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80" alt="Kitchen cleaning" class="w-full aspect-[4/3] lg:aspect-[3/4] object-cover" />
+            <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-brand-950/90 via-brand-950/50 to-transparent text-white">
+              <span class="text-xs font-semibold text-gold-400 mb-1 block">রান্নাঘর</span>
+              <p class="font-bold leading-tight">চুলা ও চিটচিটে কাউন্টারটপ</p>
+            </figcaption>
+          </figure>
+
+          <figure class="tilt-card reveal d2 group relative rounded-2xl overflow-hidden shadow-card bg-brand-50">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Bathroom wash" class="w-full aspect-[4/3] lg:aspect-[3/4] object-cover" />
+            <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-brand-950/90 via-brand-950/50 to-transparent text-white">
+              <span class="text-xs font-semibold text-gold-400 mb-1 block">বাথরুম</span>
+              <p class="font-bold leading-tight">টাইলস, বাথটাব ও গ্রাউট ক্লিনিং</p>
+            </figcaption>
+          </figure>
+
+          <figure class="tilt-card reveal d3 group relative rounded-2xl overflow-hidden shadow-card bg-brand-50">
+            <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80" alt="Basin Wash" class="w-full aspect-[4/3] lg:aspect-[3/4] object-cover" />
+            <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-brand-950/90 via-brand-950/50 to-transparent text-white">
+              <span class="text-xs font-semibold text-gold-400 mb-1 block">বেসিন ও ফিটিংস</span>
+              <p class="font-bold leading-tight">পানির লবণাক্ত দাগ নিমেষেই দূর</p>
+            </figcaption>
+          </figure>
+
+          <figure class="tilt-card reveal d4 group relative rounded-2xl overflow-hidden shadow-card bg-brand-50">
+            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80" alt="Car glass polishing" class="w-full aspect-[4/3] lg:aspect-[3/4] object-cover" />
+            <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-brand-950/90 via-brand-950/50 to-transparent text-white">
+              <span class="text-xs font-semibold text-gold-400 mb-1 block">গ্লাস ও গাড়ি</span>
+              <p class="font-bold leading-tight">কাঁচ ও গাড়ির বডি পলিশিং</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. PRICING SECTION
+    ============================================================ -->
+    <section id="pricing" class="py-16 md:py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-tags"></i> সেরা প্রাইসিং
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            আপনার প্যাকেজটি বেছে নিন
+          </h2>
+          <p class="reveal d2 mt-3 text-slate-600">
+            একাধিক পিস নিলে রয়েছে অতিরিক্ত ক্যাশ ডিসকাউন্ট! ডেলিভারি ম্যান থেকে পণ্য বুঝে নিয়ে মূল্য দিন।
+          </p>
+        </div>
+
+        <div class="mt-12 md:mt-16 grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+          <!-- Package 1 -->
+          <div class="price-card reveal d1 bg-white border border-brand-100 rounded-3xl p-7 shadow-card flex flex-col">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">স্ট্যান্ডার্ড প্যাক</span>
+              <span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl"><i class="fa-solid fa-box"></i></span>
+            </div>
+            <h3 class="mt-5 text-2xl font-bold text-brand-950">১ পিস ব্রাশ সেট</h3>
+            <p class="text-slate-500 text-sm">১টি পরিবারের জন্য আদর্শ</p>
+            <div class="mt-5 flex items-end gap-2">
+              <span class="text-5xl font-bold text-brand-900 leading-none">৳৭৫০</span>
+              <span class="text-slate-400 line-through text-lg mb-1">৳১,১৫০</span>
+            </div>
+            <p class="mt-1.5 text-sm text-brand-700 font-semibold">৳৪০০ ইনস্ট্যান্ট সেভ!</p>
+            
+            <ul class="mt-6 space-y-3 text-[15px] text-slate-700 flex-1">
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ১টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৫টি আলাদা ব্রাশ হেড কিট</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ইউএসবি ফাস্ট চার্জার ক্যাবল</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ক্যাশ অন ডেলিভারি সুবিধা</li>
+            </ul>
+
+            <button data-open-order data-package="1" class="btn mt-7 w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-6 py-3.5 rounded-xl">
+              <i class="fa-solid fa-cart-shopping"></i> অর্ডার করুন
+            </button>
+          </div>
+
+          <!-- Package 2 (Most Popular) -->
+          <div class="price-card popular reveal d2 relative bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900 text-white rounded-3xl p-7 shadow-soft flex flex-col md:-mt-4 md:mb-[-16px]">
+            <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-400 text-brand-950 text-sm font-bold px-6 py-2 rounded-full shadow-glow whitespace-nowrap">
+              <i class="fa-solid fa-crown"></i> সবচেয়ে বেশি বিক্রিত প্যাক
+            </div>
+            
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-sm font-semibold text-gold-400 bg-white/10 border border-white/15 px-3 py-1 rounded-full">ফ্যামিলি কম্বো</span>
+              <span class="w-11 h-11 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-xl"><i class="fa-solid fa-boxes-stacked"></i></span>
+            </div>
+
+            <h3 class="mt-5 text-2xl font-bold">২ পিস ব্রাশ সেট</h3>
+            <p class="text-brand-200 text-sm">কিচেন ও বাথরুমের জন্য আলাদা রাখুন</p>
+            
+            <div class="mt-5 flex items-end gap-3">
+              <span class="text-5xl font-bold text-gold-400 leading-none">৳১,৩৫০</span>
+              <span class="text-brand-300 line-through text-lg mb-1">৳১,৫০০</span>
+            </div>
+            <p class="mt-1.5 text-sm text-brand-200">প্রতি পিস মাত্র ৳৬৭৫ &nbsp;·&nbsp; <span class="text-gold-300 font-bold">অতিরিক্ত ৳১৫০ সেভ</span></p>
+
+            <ul class="mt-6 space-y-3 text-[15px] text-brand-50 flex-1">
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> মোট ১০টি প্রিমিয়াম ব্রাশ হেড</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> ২টি ওয়াল হ্যাঙ্গার কিট ফ্রি</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-gold-400 mt-1"></i> সবচেয়ে সাশ্রয়ী প্যাকেজ</li>
+            </ul>
+
+            <button data-open-order data-package="2" class="btn cta-pulse mt-7 w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-brand-950 font-bold px-6 py-3.5 rounded-xl">
+              <i class="fa-solid fa-cart-shopping"></i> অর্ডার করুন
+            </button>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="price-card reveal d3 bg-white border border-brand-100 rounded-3xl p-7 shadow-card flex flex-col">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold text-brand-700 bg-brand-50 border border-brand-100 px-3 py-1 rounded-full">মেগা সেভার</span>
+              <span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center text-xl"><i class="fa-solid fa-warehouse"></i></span>
+            </div>
+            <h3 class="mt-5 text-2xl font-bold text-brand-950">৩ পিস ব্রাশ সেট</h3>
+            <p class="text-slate-500 text-sm">নিজের ও প্রিয়জনকে গিফট করার জন্য</p>
+            <div class="mt-5 flex items-end gap-3">
+              <span class="text-5xl font-bold text-brand-900 leading-none">৳১,৮৫০</span>
+              <span class="text-slate-400 line-through text-lg mb-1">৳২,২৫০</span>
+            </div>
+            <p class="mt-1.5 text-sm text-slate-500">প্রতি পিস ৳৬১৬ &nbsp;·&nbsp; <span class="text-brand-700 font-bold">৳৪০০ অতিরিক্ত সেভ</span></p>
+
+            <ul class="mt-6 space-y-3 text-[15px] text-slate-700 flex-1">
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৩টি রিচার্জেবল ইলেকট্রিক ব্রাশ</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> মোট ১৫টি সম্পূর্ণ ব্রাশ হেড</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> ৩টি ফাস্ট চার্জিং ক্যাবল</li>
+              <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-500 mt-1"></i> সর্বোচ্চ পরিমাণ সাশ্রয়</li>
+            </ul>
+
+            <button data-open-order data-package="3" class="btn mt-7 w-full inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-6 py-3.5 rounded-xl">
+              <i class="fa-solid fa-cart-shopping"></i> অর্ডার করুন
+            </button>
+          </div>
+        </div>
+
+        <!-- Delivery Charge Details Card -->
+        <div class="reveal d4 mt-12 max-w-3xl mx-auto bg-brand-50/70 border border-brand-100 rounded-2xl p-5 md:p-6 shadow-sm">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div class="flex items-center gap-3">
+              <span class="w-12 h-12 rounded-xl bg-gold-200 text-gold-700 flex items-center justify-center text-2xl"><i class="fa-solid fa-truck-ramp-box"></i></span>
+              <div>
+                <h4 class="font-bold text-brand-950 text-base">ডেলিভারি চার্জ তালিকা</h4>
+                <p class="text-xs text-slate-600">প্যাকেজ মূল্যের সাথে এই চার্জটি প্রযোজ্য হবে</p>
+              </div>
+            </div>
+            <div class="flex gap-3 w-full sm:w-auto">
+              <div class="flex-1 sm:flex-initial bg-white border border-brand-200 rounded-xl px-5 py-2.5 text-center">
+                <span class="text-xs text-slate-500 block">ঢাকার ভিতরে</span>
+                <span class="font-bold text-brand-900 text-base">৳৭০</span>
+              </div>
+              <div class="flex-1 sm:flex-initial bg-white border border-brand-200 rounded-xl px-5 py-2.5 text-center">
+                <span class="text-xs text-slate-500 block">ঢাকার বাইরে</span>
+                <span class="font-bold text-brand-900 text-base">৳১১০</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. HOW TO ORDER PROCESS
+    ============================================================ -->
+    <section id="order" class="soft-section py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-list-check"></i> সহজ প্রক্রিয়া
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            মাত্র ১ মিনিটে কীভাবে অর্ডার করবেন?
+          </h2>
+        </div>
+
+        <div class="mt-12 md:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="reveal d1 text-center">
+            <div class="mx-auto w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-900 text-gold-400 flex items-center justify-center text-3xl shadow-soft relative">
+              <i class="fa-solid fa-hand-pointer"></i>
+              <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold-400 text-brand-950 text-xs font-bold flex items-center justify-center border-2 border-white">১</span>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">প্যাকেজ নির্বাচন</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">১, ২ অথবা ৩ পিসের কাঙ্ক্ষিত প্যাকেজটি বেছে "অর্ডার করুন" বাটনে চাপ দিন।</p>
+          </div>
+
+          <div class="reveal d2 text-center">
+            <div class="mx-auto w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-900 text-gold-400 flex items-center justify-center text-3xl shadow-soft relative">
+              <i class="fa-solid fa-file-pen"></i>
+              <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold-400 text-brand-950 text-xs font-bold flex items-center justify-center border-2 border-white">২</span>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">ঠিকানা ও ফোন নাম্বার</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">আপনার নাম, সচল মোবাইল নাম্বার এবং সম্পূর্ণ ঠিকানা সঠিকভাবে ফর্মে লিখুন।</p>
+          </div>
+
+          <div class="reveal d3 text-center">
+            <div class="mx-auto w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-900 text-gold-400 flex items-center justify-center text-3xl shadow-soft relative">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold-400 text-brand-950 text-xs font-bold flex items-center justify-center border-2 border-white">৩</span>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">কল কনফার্মেশন</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">অর্ডার সাবমিট করার পর আমাদের টিম থেকে ফোন করে দ্রুত আপনার অর্ডারটি নিশ্চিত করা হবে।</p>
+          </div>
+
+          <div class="reveal d4 text-center">
+            <div class="mx-auto w-18 h-18 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-900 text-gold-400 flex items-center justify-center text-3xl shadow-soft relative">
+              <i class="fa-solid fa-house-circle-check"></i>
+              <span class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold-400 text-brand-950 text-xs font-bold flex items-center justify-center border-2 border-white">৪</span>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-brand-950">পণ্য গ্রহণ ও মূল্য পরিশোধ</h3>
+            <p class="mt-2 text-slate-600 text-sm leading-relaxed">ডেলিভারি ম্যান থেকে পণ্যটি হাতে পেয়ে দেখে নিশ্চিন্তে টাকা পরিশোধ করুন।</p>
+          </div>
+        </div>
+
+        <div class="reveal d5 mt-12 text-center">
+          <button data-open-order class="btn cta-pulse inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-bold text-lg px-9 py-4 rounded-full">
+            <i class="fa-solid fa-bag-shopping"></i> এখনই অর্ডার করতে ক্লিক করুন
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. TRUST & STATS
+    ============================================================ -->
+    <section id="trust" class="dark-section relative py-16 md:py-24 text-white overflow-hidden">
+      <div class="absolute inset-0 grid-pattern"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          <div>
+            <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-gold-400 bg-white/10 border border-white/15 px-4 py-1.5 rounded-full">
+              <i class="fa-solid fa-handshake"></i> গ্রাহকের সন্তুষ্টিই প্রথম
+            </span>
+            <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold leading-tight">
+              কেন সারা বাংলাদেশ থেকে মানুষ CleanHome BD-কে বেছে নেয়?
+            </h2>
+            <p class="reveal d2 mt-4 text-brand-100 leading-relaxed">
+              আমরা কোনো সস্তা নকল জিনিস দেই না। অরিজিনাল টেস্টেড হাই-পাওয়ার ব্রাশ, দ্রুততম পার্সেল হ্যান্ডলিং এবং ২৪ ঘণ্টার সার্বক্ষণিক কাস্টমার সাপোর্ট নিশ্চিত করি।
+            </p>
+
+            <ul class="mt-8 space-y-4">
+              <li class="reveal d3 flex gap-4">
+                <span class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-lg"><i class="fa-solid fa-check-double"></i></span>
+                <div>
+                  <h4 class="font-bold">১০০% কোয়ালিটি চেকিং</h4>
+                  <p class="text-brand-200 text-[15px]">প্রতিটি প্রোডাক্ট প্যাকেজিংয়ের আগে চালিয়ে টেস্ট করা হয়।</p>
+                </div>
+              </li>
+              <li class="reveal d4 flex gap-4">
+                <span class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-lg"><i class="fa-solid fa-truck-fast"></i></span>
+                <div>
+                  <h4 class="font-bold">দ্রুততম ডেলিভারি</h4>
+                  <p class="text-brand-200 text-[15px]">ঢাকার মধ্যে ২৪-৪৮ ঘণ্টা, ঢাকার বাইরে সর্বোচ্চ ৭২ ঘণ্টায় পার্সেল প্রাপ্তি।</p>
+                </div>
+              </li>
+              <li class="reveal d5 flex gap-4">
+                <span class="w-11 h-11 shrink-0 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></span>
+                <div>
+                  <h4 class="font-bold">৭ দিনের রিপ্লেসমেন্ট গ্যারান্টি</h4>
+                  <p class="text-brand-200 text-[15px]">ত্রুটিযুক্ত পণ্য পেলে সাথে সাথে কোনো ঝামেলা ছাড়াই বিনামূল্যে রিপ্লেসমেন্ট।</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Counter Grid -->
+          <div class="grid grid-cols-2 gap-4 md:gap-5">
+            <div class="reveal d1 bg-white/10 border border-white/15 backdrop-blur rounded-2xl p-6 text-center">
+              <div class="w-12 h-12 mx-auto rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center text-2xl"><i class="fa-solid fa-face-smile"></i></div>
+              <div class="mt-4 text-4xl md:text-5xl font-bold text-gold-400"><span class="counter" data-target="15000" data-suffix="+">০</span></div>
+              <div class="mt-1 text-brand-100 text-sm font-medium">সন্তুষ্ট পরিবার</div>
+            </div>
+
+            <div class="reveal d2 bg-white/10 border border-white/15 backdrop-blur rounded-2xl p-6 text-center">
+              <div class="w-12 h-12 mx-auto rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center text-2xl"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="mt-4 text-4xl md:text-5xl font-bold text-gold-400"><span class="counter" data-target="64">০</span></div>
+              <div class="mt-1 text-brand-100 text-sm font-medium">জেলায় সফল ডেলিভারি</div>
+            </div>
+
+            <div class="reveal d3 bg-white/10 border border-white/15 backdrop-blur rounded-2xl p-6 text-center">
+              <div class="w-12 h-12 mx-auto rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center text-2xl"><i class="fa-solid fa-boxes-packing"></i></div>
+              <div class="mt-4 text-4xl md:text-5xl font-bold text-gold-400"><span class="counter" data-target="450" data-suffix="+">০</span></div>
+              <div class="mt-1 text-brand-100 text-sm font-medium">দৈনিক পার্সেল শিপমেন্ট</div>
+            </div>
+
+            <div class="reveal d4 bg-white/10 border border-white/15 backdrop-blur rounded-2xl p-6 text-center">
+              <div class="w-12 h-12 mx-auto rounded-xl bg-gold-400/20 text-gold-400 flex items-center justify-center text-2xl"><i class="fa-solid fa-star"></i></div>
+              <div class="mt-4 text-4xl md:text-5xl font-bold text-gold-400"><span class="counter" data-target="4.9" data-decimals="1">০</span></div>
+              <div class="mt-1 text-brand-100 text-sm font-medium">কাস্টমার পজিটিভ রেটিং</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. FAQ SECTION
+    ============================================================ -->
+    <section id="faq" class="soft-section py-16 md:py-24">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center">
+          <span class="reveal inline-flex items-center gap-2 text-sm font-semibold text-brand-700 bg-brand-100 px-4 py-1.5 rounded-full">
+            <i class="fa-solid fa-circle-question"></i> সচরাচর জিজ্ঞাসা
+          </span>
+          <h2 class="reveal d1 mt-4 text-3xl sm:text-4xl font-bold text-brand-950 leading-tight">
+            আপনার মনের সাধারণ প্রশ্নগুলোর উত্তর
+          </h2>
+        </div>
+
+        <div class="mt-10 md:mt-12 space-y-3" id="faqList">
+          <!-- Item 1 -->
+          <div class="faq-item reveal d1 bg-white border border-brand-100 rounded-2xl shadow-card overflow-hidden">
+            <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left px-5 md:px-6 py-5" aria-expanded="false">
+              <span class="faq-q font-bold text-brand-950 text-[16px] md:text-lg"><i class="fa-solid fa-battery-half text-brand-600 mr-2"></i> এটিতে চার্জ কীভাবে দিতে হয় এবং ব্যাটারি কতক্ষণ চলে?</span>
+              <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer"><p class="px-5 md:px-6 pb-5 text-slate-600 leading-relaxed">প্যাকেজের সাথে দেওয়া ইউএসবি ক্যাবল দিয়ে আপনার সাধারণ মোবাইল চার্জার বা পাওয়ার ব্যাংকে সহজেই চার্জ দিতে পারবেন। একবার ফুল চার্জ হতে প্রায় ২ ঘণ্টা লাগে এবং একটানা প্রায় ২-৩ ঘণ্টা চালানো যায়।</p></div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item reveal d2 bg-white border border-brand-100 rounded-2xl shadow-card overflow-hidden">
+            <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left px-5 md:px-6 py-5" aria-expanded="false">
+              <span class="faq-q font-bold text-brand-950 text-[16px] md:text-lg"><i class="fa-solid fa-water text-brand-600 mr-2"></i> পানিতে ভিজে গেলে কি মোটর বা ব্যাটারি নষ্ট হবে?</span>
+              <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer"><p class="px-5 md:px-6 pb-5 text-slate-600 leading-relaxed">না, এটি IPX7 ওয়াটার-রেজিস্ট্যান্ট প্রযুক্তি দিয়ে তৈরি। তাই কিচেন বেসিন কিংবা বাথরুমে পানির ছিটায় কোনো ক্ষতি হয় না। তবে চার্জিং পোর্টে রাবার ক্যাপটি ভালোভাবে আটকে রাখা জরুরি।</p></div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item reveal d3 bg-white border border-brand-100 rounded-2xl shadow-card overflow-hidden">
+            <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left px-5 md:px-6 py-5" aria-expanded="false">
+              <span class="faq-q font-bold text-brand-950 text-[16px] md:text-lg"><i class="fa-solid fa-layer-group text-brand-600 mr-2"></i> প্যাকেজের সাথে কয়টি ব্রাশ হেড পাওয়া যাবে?</span>
+              <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer"><p class="px-5 md:px-6 pb-5 text-slate-600 leading-relaxed">প্রতিটি ইউনিটের সাথে মোট ৫টি আলাদা ব্রাশ হেড থাকবে: ১টি হার্ড নাইলন ব্রাশ (টাইলস ও গ্রাউটের জন্য), ১টি স্পঞ্জ হেড (কাচ ও ডিশওয়াসের জন্য), ১টি পলিশিং মোপ হেড, ১টি স্টিল উল মাজুনি এবং ১টি ব্রাশ অ্যাডাপ্টার।</p></div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item reveal d4 bg-white border border-brand-100 rounded-2xl shadow-card overflow-hidden">
+            <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left px-5 md:px-6 py-5" aria-expanded="false">
+              <span class="faq-q font-bold text-brand-950 text-[16px] md:text-lg"><i class="fa-solid fa-box-open text-brand-600 mr-2"></i> ডেলিভারি পাওয়ার পর চেক করে টাকা দেওয়া যাবে কি?</span>
+              <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer"><p class="px-5 md:px-6 pb-5 text-slate-600 leading-relaxed">হ্যাঁ, অবশ্যই! ডেলিভারি ম্যান থাকা অবস্থায় প্যাকেট খুলে ব্রাশটি দেখে চেক করে তারপর মূল্য পরিশোধ করতে পারবেন। কোনো অগ্রিম টাকা প্রদান করতে হয় না।</p></div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item reveal d5 bg-white border border-brand-100 rounded-2xl shadow-card overflow-hidden">
+            <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left px-5 md:px-6 py-5" aria-expanded="false">
+              <span class="faq-q font-bold text-brand-950 text-[16px] md:text-lg"><i class="fa-solid fa-rotate-left text-brand-600 mr-2"></i> প্রোডাক্টে সমস্যা হলে রিপ্লেসমেন্ট কীভাবে পাবো?</span>
+              <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer"><p class="px-5 md:px-6 pb-5 text-slate-600 leading-relaxed">প্যাকেট খোলার পর কোনো ত্রুটি (যেমন চার্জ না হওয়া বা অন না হওয়া) পেলে সাথে সাথে আমাদের হেল্পলাইন বা WhatsApp-এ ছবি/ভিডিও পাঠাবেন। আমরা দ্রুত কোনো বাড়তি চার্জ ছাড়াই নতুন প্রোডাক্ট রিপ্লেস করে দেবো।</p></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       11. RICH FOOTER
+  ============================================================ -->
+  <footer id="contact" class="bg-brand-950 text-brand-100 relative overflow-hidden">
+    <div class="absolute inset-0 grid-pattern opacity-60"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <!-- Brand Info -->
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 text-gold-400 flex items-center justify-center text-xl shadow-soft"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+            <span class="text-2xl font-bold text-white">CleanHome<span class="text-gold-400">BD</span></span>
+          </div>
+          <p class="mt-4 text-[14px] leading-relaxed text-brand-200">
+            আমরা দিচ্ছি আধুনিক কিচেন ও হোম কেয়ার গ্যাজেট যা আপনার জীবনকে সহজ ও পরিচ্ছন্ন করে তোলে। অরিজিনাল গ্যাজেটের বিশ্বস্ত ঠিকানা।
+          </p>
+          <div class="mt-5 flex items-center gap-3">
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#1877F2] text-white flex items-center justify-center transition-all hover:-translate-y-1"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF0000] text-white flex items-center justify-center transition-all hover:-translate-y-1"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" data-wa-link aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#25D366] text-white flex items-center justify-center transition-all hover:-translate-y-1"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-base">প্রয়োজনীয় লিংক</h4>
+          <ul class="mt-4 space-y-2 text-sm text-brand-200">
+            <li><a href="#home" class="hover:text-gold-400 transition-colors">হোমপেজ</a></li>
+            <li><a href="#slider" class="hover:text-gold-400 transition-colors">প্রোডাক্ট শোকেস</a></li>
+            <li><a href="#features" class="hover:text-gold-400 transition-colors">প্রোডাক্টের বৈশিষ্ট্য</a></li>
+            <li><a href="#video" class="hover:text-gold-400 transition-colors">ব্যবহারের ভিডিও</a></li>
+            <li><a href="#pricing" class="hover:text-gold-400 transition-colors">প্যাকেজ ও মূল্য তালিকা</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div>
+          <h4 class="text-white font-bold text-base">সরাসরি যোগাযোগ</h4>
+          <ul class="mt-4 space-y-3 text-sm text-brand-200">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-phone text-gold-400 mt-1"></i>
+              <div>
+                <div class="text-xs text-brand-300">হটলাইন নম্বর</div>
+                <a href="tel:01XXXXXXXXX" class="text-white font-semibold hover:text-gold-400">01XXXXXXXXX</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-brands fa-whatsapp text-gold-400 mt-1"></i>
+              <div>
+                <div class="text-xs text-brand-300">হোয়াটসঅ্যাপ সাপোর্ট</div>
+                <a href="#" data-wa-link class="text-white font-semibold hover:text-gold-400">01XXXXXXXXX</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>
+              <div>
+                <div class="text-xs text-brand-300">হেড অফিস</div>
+                <span class="text-white">উত্তরা, ঢাকা-১২৩০, বাংলাদেশ</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Safe shopping guarantee -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+          <h4 class="text-white font-bold text-base flex items-center gap-2"><i class="fa-solid fa-shield-halved text-gold-400"></i> নিরাপদ কেনাকাটা</h4>
+          <p class="mt-2 text-xs text-brand-200 leading-relaxed">
+            কোনো প্রকার অগ্রিম পেমেন্ট ছাড়াই অর্ডার করতে পারেন। পণ্য ডেলিভারি পেয়ে চেক করে ক্যাশ পরিশোধ করুন।
+          </p>
+          <button data-open-order class="btn mt-4 w-full bg-gradient-to-r from-gold-500 to-gold-400 text-brand-950 font-bold py-2.5 rounded-xl text-sm">
+            অর্ডার ফর্ম খুলুন
+          </button>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-300">
+        <p>© <span id="year">2026</span> CleanHome BD. সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="flex items-center gap-1.5"><i class="fa-solid fa-heart text-gold-400"></i> কোয়ালিটি প্রোডাক্ট আপনার ঘরে পৌঁছে দিতে অঙ্গীকারবদ্ধ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       12. FLOATING WHATSAPP BUTTON
+  ============================================================ -->
+  <a href="#" data-wa-link target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="wa-btn fixed bottom-5 right-5 md:bottom-7 md:right-7 z-40 group flex items-center gap-3">
+    <span class="hidden md:block bg-white text-brand-950 text-sm font-semibold px-4 py-2 rounded-full shadow-soft opacity-0 translate-x-3 group-hover:opacity-100 group-hover:translate-x-0 transition-all">
+      WhatsApp-এ কথা বলুন
+    </span>
+    <span class="wa-ring relative w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] text-white flex items-center justify-center text-3xl md:text-3xl shadow-[0_10px_30px_-8px_rgba(37,211,102,.8)] hover:scale-110 transition-transform">
+      <i class="fa-brands fa-whatsapp"></i>
+    </span>
+  </a>
+
+  <!-- ============================================================
+       13. ORDER POPUP MODAL
+  ============================================================ -->
+  <div id="orderModal" class="modal fixed inset-0 z-[60] flex items-end sm:items-center justify-center p-0 sm:p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div id="modalBackdrop" class="absolute inset-0 bg-brand-950/75 backdrop-blur-sm"></div>
+
+    <div class="modal-card relative w-full sm:max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl overflow-hidden max-h-[94vh] flex flex-col">
+      <!-- Modal Header -->
+      <div class="relative bg-gradient-to-r from-brand-900 to-brand-800 text-white px-6 py-4 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-xl bg-white/10 text-gold-400 flex items-center justify-center text-xl"><i class="fa-solid fa-cart-shopping"></i></span>
+          <div>
+            <h3 id="modalTitle" class="text-lg font-bold leading-tight">অর্ডার কনফার্ম করুন</h3>
+            <p class="text-xs text-brand-200">সঠিক তথ্য দিন — ১ মিনিটে ডেলিভারি নিশ্চিত করুন</p>
+          </div>
+        </div>
+        <button id="modalClose" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 transition-all flex items-center justify-center text-white" aria-label="বন্ধ করুন">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="modal-scroll overflow-y-auto">
+        <!-- FORM VIEW -->
+        <form id="orderForm" class="px-6 py-6" novalidate>
+          <!-- Product Name -->
+          <div>
+            <label class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-box text-brand-600 mr-1"></i> প্রোডাক্টের নাম</label>
+            <input type="text" name="product" id="productName" value="5-in-1 Multifunctional Electric Cleaning Brush" readonly class="field bg-brand-50/70 font-medium cursor-default" />
+          </div>
+
+          <!-- Quantity / Package -->
+          <div class="mt-4">
+            <label for="quantity" class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-layer-group text-brand-600 mr-1"></i> প্যাকেজ সিলেক্ট করুন</label>
+            <select id="quantity" name="quantity" class="field font-bold text-brand-950 bg-white">
+              <option value="1">১ পিস ব্রাশ সেট — ৳৭৫০</option>
+              <option value="2" selected>২ পিস ফ্যামিলি প্যাক — ৳১,৩৫০ (Most Popular)</option>
+              <option value="3">৩ পিস মেগা সেভার — ৳১,৮৫০</option>
+            </select>
+          </div>
+
+          <!-- Customer Name -->
+          <div class="mt-4">
+            <label for="customerName" class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-user text-brand-600 mr-1"></i> আপনার নাম <span class="text-red-500">*</span></label>
+            <input type="text" id="customerName" name="name" placeholder="যেমন: তানভীর আহমেদ" class="field" autocomplete="name" required />
+            <p class="field-error" data-error-for="customerName"><i class="fa-solid fa-circle-exclamation"></i> অনুগ্রহ করে আপনার নাম লিখুন</p>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="mt-4">
+            <label for="phone" class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-mobile-screen text-brand-600 mr-1"></i> মোবাইল নাম্বার <span class="text-red-500">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx (১১ ডিজিট)" class="field" inputmode="numeric" maxlength="14" autocomplete="tel" required />
+            <p class="field-error" data-error-for="phone"><i class="fa-solid fa-circle-exclamation"></i> সঠিক ১১ ডিজিটের মোবাইল নাম্বার দিন (01 দিয়ে শুরু)</p>
+          </div>
+
+          <!-- Address -->
+          <div class="mt-4">
+            <label for="address" class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-location-dot text-brand-600 mr-1"></i> সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label>
+            <textarea id="address" name="address" rows="3" placeholder="বাড়ি নং, রোড নং, এলাকা, থানা ও জেলা" class="field resize-none" autocomplete="street-address" required></textarea>
+            <p class="field-error" data-error-for="address"><i class="fa-solid fa-circle-exclamation"></i> অনুগ্রহ করে সম্পূর্ণ ঠিকানা লিখুন (কমপক্ষে ১০ অক্ষর)</p>
+          </div>
+
+          <!-- Delivery Area -->
+          <div class="mt-4">
+            <label class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-truck text-brand-600 mr-1"></i> ডেলিভারি এলাকা</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="radio-pill relative">
+                <input type="radio" name="deliveryArea" value="inside" checked />
+                <span class="pill text-sm"><i class="fa-solid fa-city"></i> ঢাকার ভিতরে <strong>(৳৭০)</strong></span>
+              </label>
+              <label class="radio-pill relative">
+                <input type="radio" name="deliveryArea" value="outside" />
+                <span class="pill text-sm"><i class="fa-solid fa-map-location-dot"></i> ঢাকার বাইরে <strong>(৳১১০)</strong></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Payment Method -->
+          <div class="mt-4">
+            <label class="block text-sm font-semibold text-brand-950 mb-1.5"><i class="fa-solid fa-credit-card text-brand-600 mr-1"></i> পেমেন্ট মেথড</label>
+            <div class="grid grid-cols-3 gap-2 sm:gap-3">
+              <label class="radio-pill relative">
+                <input type="radio" name="payment" value="Cash on Delivery" checked />
+                <span class="pill text-xs sm:text-sm flex-col py-3"><i class="fa-solid fa-hand-holding-dollar text-lg"></i> ক্যাশ অন ডেলিভারি</span>
+              </label>
+              <label class="radio-pill relative">
+                <input type="radio" name="payment" value="বিকাশ" />
+                <span class="pill text-xs sm:text-sm flex-col py-3"><i class="fa-solid fa-mobile-button text-lg"></i> বিকাশ</span>
+              </label>
+              <label class="radio-pill relative">
+                <input type="radio" name="payment" value="নগদ" />
+                <span class="pill text-xs sm:text-sm flex-col py-3"><i class="fa-solid fa-money-bill-transfer text-lg"></i> নগদ</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- TrxID Section -->
+          <div id="trxWrap">
+            <div class="bg-gold-200/40 border border-gold-300 rounded-xl p-4">
+              <p class="text-sm text-brand-950 leading-relaxed">
+                <i class="fa-solid fa-circle-info text-gold-600 mr-1"></i>
+                <span id="payInstruction">মোট <strong id="payAmount">৳১,৪২০</strong> টাকা আমাদের <strong id="payNumber">01XXXXXXXXX</strong> (Personal) নাম্বারে <strong>Send Money</strong> করে নিচে ট্রানজেকশন আইডি দিন:</span>
+              </p>
+              <label for="trxId" class="block text-sm font-semibold text-brand-950 mt-3 mb-1">Transaction ID <span class="text-red-500">*</span></label>
+              <input type="text" id="trxId" name="trxId" placeholder="যেমন: 8N7A5B2C1D" class="field bg-white uppercase" autocomplete="off" />
+              <p class="field-error" data-error-for="trxId"><i class="fa-solid fa-circle-exclamation"></i> অনুগ্রহ করে সঠিক Transaction ID দিন</p>
+            </div>
+          </div>
+
+          <!-- Order Cost Summary -->
+          <div class="mt-5 bg-brand-50 border border-brand-100 rounded-2xl p-4 text-[15px]">
+            <div class="flex justify-between text-slate-700">
+              <span>প্যাকেজ মূল্য (<span id="sumPkg">২ পিস</span>)</span>
+              <span id="sumPrice" class="font-semibold">৳১,৩৫০</span>
+            </div>
+            <div class="flex justify-between text-slate-700 mt-1.5">
+              <span>ডেলিভারি চার্জ</span>
+              <span id="sumDelivery" class="font-semibold">৳৭০</span>
+            </div>
+            <div class="border-t border-dashed border-brand-200 my-3"></div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-brand-950 text-base">সর্বমোট প্রদেয়</span>
+              <span id="sumTotal" class="text-2xl font-bold text-brand-900">৳১,৪২০</span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submitBtn" class="btn mt-5 w-full inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 text-brand-950 font-bold text-lg px-6 py-4 rounded-xl shadow-soft">
+            <span class="btn-text inline-flex items-center gap-2"><i class="fa-solid fa-circle-check"></i> অর্ডার কনফার্ম করুন</span>
+            <span class="btn-loading hidden items-center gap-2"><span class="spinner"></span> অর্ডার প্রসেস হচ্ছে...</span>
+          </button>
+          <p class="mt-3 text-center text-xs text-slate-500"><i class="fa-solid fa-lock text-brand-600"></i> আপনার যাবতীয় তথ্য আমাদের কাছে সম্পূর্ণ নিরাপদ।</p>
+        </form>
+
+        <!-- SUCCESS VIEW -->
+        <div id="successView" class="hidden px-6 py-10 text-center">
+          <div class="pop-in mx-auto w-20 h-20 rounded-full bg-gradient-to-br from-brand-600 to-brand-800 text-white flex items-center justify-center shadow-soft">
+            <svg width="44" height="44" viewBox="0 0 52 52" fill="none"><path class="check-path" d="M12 27 L22 37 L40 17" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="mt-5 text-2xl font-bold text-brand-950">ধন্যবাদ! অর্ডারটি সফল হয়েছে 🎉</h3>
+          <p class="mt-2 text-slate-600 leading-relaxed text-sm">
+            আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। আমাদের কাস্টমার ম্যানেজার <strong>খুব দ্রুত আপনাকে ফোন করে</strong> ডেলিভারি কনফার্ম করবেন।
+          </p>
+
+          <div id="successSummary" class="mt-5 bg-brand-50 border border-brand-100 rounded-2xl p-4 text-left text-[14px] space-y-2"></div>
+
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="#" data-wa-link target="_blank" rel="noopener" class="btn flex-1 inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fbd5a] text-white font-bold px-5 py-3 rounded-xl text-sm">
+              <i class="fa-brands fa-whatsapp text-lg"></i> হোয়াটসঅ্যাপে নিশ্চিত করুন
+            </a>
+            <button id="successClose" class="btn flex-1 inline-flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 text-white font-bold px-5 py-3 rounded-xl text-sm">
+              <i class="fa-solid fa-house"></i> হোমে ফিরে যান
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       14. LIVE SALES TOAST NOTIFICATION
+  ============================================================ -->
+  <div id="liveSalesPopup" class="fixed bottom-24 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-2xl border border-brand-200 z-40 transform -translate-x-[150%] transition-transform duration-500 flex items-center gap-3 max-w-xs">
+    <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-lg flex-shrink-0">
+      <i class="fa-solid fa-bag-shopping text-brand-600"></i>
+    </div>
+    <div>
+      <p id="salesPerson" class="text-xs font-bold text-slate-900">তানজিম ভাই (ধানমন্ডি)</p>
+      <p id="salesProduct" class="text-[11px] text-brand-600 font-semibold">২ পিস ফ্যামিলি প্যাক অর্ডার করেছেন (২ মিনিট আগে)</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       15. JAVASCRIPT CORE ENGINE
+  ============================================================ -->
+  <script>
+    /* -------------------------------------------------------------
+       CONFIG & STORE SETTINGS
+    ------------------------------------------------------------- */
+    const CONFIG = {
+      STORE_NAME: 'CleanHome BD',
+      STORE_CODE: 'CH',
+      WORKER_URL: 'https://steep-rain-e346.azwadahshafhossain.workers.dev',
+      WHATSAPP_NUMBER: '8801XXXXXXXXX',
+      BKASH_NUMBER: '01XXXXXXXXX',
+      NAGAD_NUMBER: '01XXXXXXXXX'
+    };
+
+    const PACKAGES = {
+      '1': { label: '১ পিস ব্রাশ সেট', price: 750 },
+      '2': { label: '২ পিস ফ্যামিলি প্যাক', price: 1350 },
+      '3': { label: '৩ পিস মেগা সেভার', price: 1850 }
+    };
+
+    const DELIVERY = {
+      inside:  { label: 'ঢাকার ভিতরে', charge: 70 },
+      outside: { label: 'ঢাকার বাইরে', charge: 110 }
+    };
+
+    const fakeBuyers = [
+      { name: 'তানজিম ভাই (উত্তরা, ঢাকা)', pkg: '২ পিস ফ্যামিলি প্যাক' },
+      { name: 'সালমা চৌধুরী (ধানমন্ডি, ঢাকা)', pkg: '১ পিস ব্রাশ সেট' },
+      { name: 'রাকিবুল হাসান (পতেঙ্গা, চট্টগ্রাম)', pkg: '৩ পিস মেগা সেভার' },
+      { name: 'নুসরাত জাহান (সিলেট সদর)', pkg: '২ পিস ফ্যামিলি প্যাক' },
+      { name: 'মাহমুদ ভাই (রাজশাহী)', pkg: '১ পিস ব্রাশ সেট' },
+      { name: 'সুমাইয়া আক্তার (খুলনা)', pkg: '২ পিস ফ্যামিলি প্যাক' }
+    ];
+
+    /* Helpers */
+    const $ = (s, r = document) => r.querySelector(s);
+    const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+    const BN_DIGITS = '০১২৩৪৫৬৭৮৯';
+    const toBn = (n) => String(n).replace(/\d/g, d => BN_DIGITS[d]);
+    const toEn = (s) => String(s).replace(/[০-৯]/g, d => BN_DIGITS.indexOf(d));
+    const money = (n) => '৳' + toBn(Number(n).toLocaleString('en-US'));
+    const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+    // Dynamic Footer Year
+    $('#year').textContent = new Date().getFullYear();
+
+    // WhatsApp Dynamic Link Generation
+    (function setupWhatsApp() {
+      const msg = encodeURIComponent(`আসসালামু আলাইকুম, আমি ${CONFIG.STORE_NAME} থেকে 5-in-1 Electric Cleaning Brush অর্ডার করতে চাই। বিস্তারিত জানাবেন প্লিজ।`);
+      const url = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${msg}`;
+      $$('[data-wa-link]').forEach(a => { a.href = url; a.target = '_blank'; a.rel = 'noopener'; });
+    })();
+
+    // Sticky Header Observer
+    (function setupHeader() {
+      const header = $('#header');
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 20);
+      }, { passive: true });
+    })();
+
+    // Mobile Menu Toggle
+    (function setupMobileMenu() {
+      const btn = $('#burgerBtn'), menu = $('#mobileMenu');
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+      $$('a', menu).forEach(l => l.addEventListener('click', () => menu.classList.add('hidden')));
+    })();
+
+    // Scroll Reveal Observer
+    (function setupReveal() {
+      const els = $$('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('in-view')); return; }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in-view'); io.unobserve(en.target); } });
+      }, { threshold: 0.1 });
+      els.forEach(e => io.observe(e));
+    })();
+
+    // Animated Counters
+    (function setupCounters() {
+      const counters = $$('.counter');
+      const animate = (el) => {
+        const target = parseFloat(el.dataset.target);
+        const decimals = parseInt(el.dataset.decimals || '0', 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1600, start = performance.now();
+        const step = (now) => {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const val = target * eased;
+          el.textContent = toBn(val.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals })) + (p === 1 ? suffix : '');
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      };
+      if (!('IntersectionObserver' in window)) { counters.forEach(animate); return; }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) { animate(en.target); io.unobserve(en.target); } });
+      }, { threshold: 0.3 });
+      counters.forEach(c => io.observe(c));
+    })();
+
+    // FAQ Accordion
+    (function setupFaq() {
+      const items = $$('.faq-item');
+      items.forEach(item => {
+        const btn = $('.faq-toggle', item);
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+          items.forEach(i => { i.classList.remove('open'); $('.faq-toggle', i).setAttribute('aria-expanded', 'false'); });
+          if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+        });
+      });
+      if (items[0]) { items[0].classList.add('open'); $('.faq-toggle', items[0]).setAttribute('aria-expanded', 'true'); }
+    })();
+
+    /* -------------------------------------------------------------
+       AUTO-SLIDING PRODUCT CAROUSEL WITH INTERACTION PAUSE
+    ------------------------------------------------------------- */
+    (function setupSlider() {
+      const track = $('#sliderTrack');
+      const dots = $$('#sliderDots button');
+      const prevBtn = $('#sliderPrev');
+      const nextBtn = $('#sliderNext');
+      const wrapper = $('#sliderWrapper');
+      
+      let currentIndex = 0;
+      const totalSlides = dots.length;
+      let slideInterval = null;
+
+      function updateSlider(index) {
+        currentIndex = (index + totalSlides) % totalSlides;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle('bg-gold-400', idx === currentIndex);
+          dot.classList.toggle('scale-125', idx === currentIndex);
+          dot.classList.toggle('bg-white/60', idx !== currentIndex);
+        });
+      }
+
+      function startAutoSlide() {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+          updateSlider(currentIndex + 1);
+        }, 3500);
+      }
+
+      function pauseAutoSlide() {
+        if (slideInterval) clearInterval(slideInterval);
+      }
+
+      prevBtn.addEventListener('click', () => {
+        pauseAutoSlide();
+        updateSlider(currentIndex - 1);
+        startAutoSlide();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        pauseAutoSlide();
+        updateSlider(currentIndex + 1);
+        startAutoSlide();
+      });
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          pauseAutoSlide();
+          updateSlider(idx);
+          startAutoSlide();
+        });
+      });
+
+      // Pause on hover or touch
+      wrapper.addEventListener('mouseenter', pauseAutoSlide);
+      wrapper.addEventListener('mouseleave', startAutoSlide);
+      wrapper.addEventListener('touchstart', pauseAutoSlide, { passive: true });
+      wrapper.addEventListener('touchend', startAutoSlide, { passive: true });
+
+      startAutoSlide();
+    })();
+
+    /* -------------------------------------------------------------
+       ORDER MODAL & FORM LOGIC
+    ------------------------------------------------------------- */
+    const modal = $('#orderModal');
+    const form = $('#orderForm');
+    const successView = $('#successView');
+    const submitBtn = $('#submitBtn');
+    const trxWrap = $('#trxWrap');
+    const trxInput = $('#trxId');
+    const quantitySelect = $('#quantity');
+    let submitted = false;
+
+    function getSelection() {
+      const qty = quantitySelect.value;
+      const area = form.deliveryArea.value;
+      const pkg = PACKAGES[qty] || PACKAGES['1'];
+      const del = DELIVERY[area] || DELIVERY.inside;
+      return { qty, pkg, area, del, total: pkg.price + del.charge };
+    }
+
+    function updateSummary() {
+      const { pkg, del, total } = getSelection();
+      $('#sumPkg').textContent = pkg.label;
+      $('#sumPrice').textContent = money(pkg.price);
+      $('#sumDelivery').textContent = money(del.charge);
+      $('#sumTotal').textContent = money(total);
+      $('#payAmount').textContent = money(total);
+
+      const pay = form.payment.value;
+      $('#payNumber').textContent = pay === 'বিকাশ' ? CONFIG.BKASH_NUMBER : CONFIG.NAGAD_NUMBER;
+    }
+
+    function updateTrxVisibility() {
+      const pay = form.payment.value;
+      const needsTrx = pay === 'বিকাশ' || pay === 'নগদ';
+      trxWrap.classList.toggle('show', needsTrx);
+      trxInput.required = needsTrx;
+      if (!needsTrx) {
+        trxInput.value = '';
+        clearError(trxInput);
+      }
+    }
+
+    function openModal(pkgKey) {
+      if (submitted) resetForm();
+      if (pkgKey && PACKAGES[pkgKey]) quantitySelect.value = pkgKey;
+      updateSummary();
+      updateTrxVisibility();
+      modal.classList.add('open');
+      document.body.classList.add('no-scroll');
+
+      // Meta Pixel Event: InitiateCheckout
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout', {
+          content_name: $('#productName').value,
+          currency: 'BDT'
+        });
+      }
+
+      setTimeout(() => $('#customerName').focus({ preventScroll: true }), 300);
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    }
+
+    function resetForm() {
+      form.reset();
+      quantitySelect.value = '2';
+      $$('.field', form).forEach(clearError);
+      updateTrxVisibility();
+      updateSummary();
+      form.classList.remove('hidden');
+      successView.classList.add('hidden');
+      setLoading(false);
+      submitted = false;
+    }
+
+    // Modal Triggers
+    $$('[data-open-order]').forEach(btn => btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal(btn.dataset.package);
+    }));
+
+    $('#modalClose').addEventListener('click', closeModal);
+    $('#modalBackdrop').addEventListener('click', closeModal);
+    $('#successClose').addEventListener('click', () => { closeModal(); resetForm(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+    quantitySelect.addEventListener('change', updateSummary);
+    $$('input[name="deliveryArea"]', form).forEach(r => r.addEventListener('change', updateSummary));
+    $$('input[name="payment"]', form).forEach(r => r.addEventListener('change', () => { updateTrxVisibility(); updateSummary(); }));
+
+    // Bengali Phone formatting
+    $('#phone').addEventListener('input', (e) => {
+      let v = toEn(e.target.value).replace(/\D/g, '');
+      if (v.startsWith('880')) v = '0' + v.slice(3);
+      e.target.value = v.slice(0, 11);
+      if (v.length === 11) clearError(e.target);
+    });
+
+    $$('.field', form).forEach(f => f.addEventListener('input', () => { if (f.value.trim()) clearError(f); }));
+
+    function showError(el) {
+      el.classList.add('error');
+      const msg = $(`[data-error-for="${el.id}"]`);
+      if (msg) msg.classList.add('show');
+    }
+
+    function clearError(el) {
+      el.classList.remove('error');
+      const msg = $(`[data-error-for="${el.id}"]`);
+      if (msg) msg.classList.remove('show');
+    }
+
+    function validate() {
+      let ok = true, first = null;
+      const name = $('#customerName'), phone = $('#phone'), address = $('#address');
+      const mark = (el) => { showError(el); ok = false; first = first || el; };
+
+      if (name.value.trim().length < 2) mark(name);
+      if (!/^01[3-9]\d{8}$/.test(phone.value.trim())) mark(phone);
+      if (address.value.trim().length < 10) mark(address);
+      if (trxInput.required && trxInput.value.trim().length < 4) mark(trxInput);
+
+      if (first) first.focus();
+      return ok;
+    }
+
+    function setLoading(on) {
+      submitBtn.disabled = on;
+      $('.btn-text', submitBtn).classList.toggle('hidden', on);
+      $('.btn-loading', submitBtn).classList.toggle('hidden', !on);
+      $('.btn-loading', submitBtn).classList.toggle('inline-flex', on);
+    }
+
+    function collectOrder() {
+      const { pkg, del, total } = getSelection();
+      const payment = form.payment.value;
+      return {
+        store_name: CONFIG.STORE_NAME,
+        store_code: CONFIG.STORE_CODE,
+        product: $('#productName').value,
+        quantity: `${pkg.label} (৳${toBn(pkg.price)})`,
+        name: $('#customerName').value.trim(),
+        phone: $('#phone').value.trim(),
+        address: $('#address').value.trim(),
+        deliveryArea: `${del.label} (৳${toBn(del.charge)})`,
+        payment,
+        trxId: (payment === 'Cash on Delivery') ? '' : trxInput.value.trim().toUpperCase(),
+        total: `৳${toBn(total)}`,
+        total_raw: total,
+        time: new Date().toLocaleString('bn-BD', { dateStyle: 'medium', timeStyle: 'short' })
+      };
+    }
+
+    async function sendToWorker(order) {
+      if (!CONFIG.WORKER_URL) return null;
+      const res = await fetch(`${CONFIG.WORKER_URL}/order`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          store_name: order.store_name,
+          store_code: order.store_code,
+          product: order.product,
+          quantity: order.quantity,
+          name: order.name,
+          phone: order.phone,
+          address: order.address,
+          deliveryArea: order.deliveryArea,
+          payment: order.payment,
+          trxId: order.trxId,
+          total: order.total,
+          time: order.time
+        })
+      });
+      if (!res.ok) throw new Error('Worker API responded with status ' + res.status);
+      return await res.json();
+    }
+
+    function renderSuccess(order) {
+      const row = (icon, label, val) => `<div class="flex gap-3"><span class="w-5 text-brand-600"><i class="fa-solid ${icon}"></i></span><span class="text-slate-500 w-24 shrink-0">${label}:</span><span class="font-semibold text-brand-950">${val}</span></div>`;
+      $('#successSummary').innerHTML =
+        row('fa-box', 'পণ্য', order.product) +
+        row('fa-layer-group', 'প্যাকেজ', order.quantity) +
+        row('fa-user', 'নাম', order.name) +
+        row('fa-mobile-screen', 'মোবাইল', order.phone) +
+        row('fa-location-dot', 'ঠিকানা', order.address) +
+        row('fa-credit-card', 'পেমেন্ট', order.payment + (order.trxId ? ` (Trx: ${order.trxId})` : '')) +
+        row('fa-coins', 'সর্বমোট', order.total);
+
+      const orderMessage = encodeURIComponent([
+        `আসসালামু আলাইকুম, ${CONFIG.STORE_NAME}-এ আমার অর্ডারটি নিশ্চিত করতে চাই।`,
+        `নাম: ${order.name}`,
+        `মোবাইল: ${order.phone}`,
+        `প্যাকেজ: ${order.quantity}`,
+        `ঠিকানা: ${order.address}`,
+        `পেমেন্ট: ${order.payment}`,
+        `সর্বমোট: ${order.total}`
+      ].join('\n'));
+
+      $$('[data-wa-link]', successView).forEach(link => {
+        link.href = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${orderMessage}`;
+      });
+
+      form.classList.add('hidden');
+      successView.classList.remove('hidden');
+      $('.modal-scroll').scrollTop = 0;
+    }
+
+    // Submit handler with Meta Pixel Purchase event
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (submitBtn.disabled) return;
+      if (!validate()) return;
+
+      setLoading(true);
+      const order = collectOrder();
+
+      try {
+        await Promise.allSettled([sendToWorker(order), sleep(800)]);
+      } catch (err) {
+        console.warn('Submission warning (proceeding):', err);
+      } finally {
+        // Meta Pixel Event: Purchase
+        if (typeof fbq === 'function') {
+          fbq('track', 'Purchase', {
+            value: order.total_raw,
+            currency: 'BDT',
+            content_name: order.product
+          });
+        }
+
+        setLoading(false);
+        submitted = true;
+        renderSuccess(order);
+      }
+    });
+
+    /* -------------------------------------------------------------
+       16. LIVE SALES NOTIFICATION TOAST
+    ------------------------------------------------------------- */
+    function showRandomSalesPopup() {
+      const popup = $('#liveSalesPopup');
+      const randomBuyer = fakeBuyers[Math.floor(Math.random() * fakeBuyers.length)];
+
+      $('#salesPerson').innerText = randomBuyer.name;
+      $('#salesProduct').innerText = `${randomBuyer.pkg} অর্ডার করেছেন (২ মিনিট আগে)`;
+      popup.classList.remove('-translate-x-[150%]');
+
+      setTimeout(() => {
+        popup.classList.add('-translate-x-[150%]');
+      }, 4500);
+    }
+
+    // Periodic Trigger: Every 16 seconds
+    setInterval(showRandomSalesPopup, 16000);
+    setTimeout(showRandomSalesPopup, 3000);
+  </script>
+</body>
+</html>
